@@ -192,7 +192,7 @@ func GetRewardBalance(address string, api string) (string) {
 	 if len(response.Total) == 0 {
 		 ress = "0.0"
 		 } else {
-		  for i := range response.UnbondingResponses{
+		  for i := range response.Total{
 				if amount, err := strconv.ParseFloat(response.Total[i].Amount, 64); err == nil {
 				 fullamount += amount
 				 }
