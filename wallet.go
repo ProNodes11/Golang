@@ -92,7 +92,6 @@ func GetBalance(address string, api string) (ress string) {
 
 
 func GetAvailableBalance(address string, api string) (string) {
-	log.Println(api + "/cosmos/bank/v1beta1/balances/" + address)
 	resp, err := http.Get(api + "/cosmos/bank/v1beta1/balances/" + address)
    if err != nil {
       log.Fatalln(err)
@@ -120,7 +119,6 @@ func GetAvailableBalance(address string, api string) (string) {
 	return ress
 }
 func GetDelegatedBalance(address string, api string) (string) {
-	log.Println(api + "/cosmos/staking/v1beta1/delegations/" + address)
 	resp, err := http.Get(api + "/cosmos/staking/v1beta1/delegations/" + address)
    if err != nil {
       log.Fatalln(err)
@@ -149,7 +147,6 @@ func GetDelegatedBalance(address string, api string) (string) {
 }
 
 func GetUnboundingBalance(address string, api string) (string) {
-	log.Println(api + "/cosmos/staking/v1beta1/delegators/" + address + "/unbonding_delegations")
 	resp, err := http.Get(api + "/cosmos/staking/v1beta1/delegators/" + address + "/unbonding_delegations")
    if err != nil {
       log.Fatalln(err)
@@ -178,7 +175,6 @@ func GetUnboundingBalance(address string, api string) (string) {
 }
 
 func GetRewardBalance(address string, api string) (string) {
-	log.Println(api + "/cosmos/distribution/v1beta1/delegators/" + address + "/rewards")
 	resp, err := http.Get(api + "/cosmos/distribution/v1beta1/delegators/" + address + "/rewards")
    if err != nil {
       log.Fatalln(err)
