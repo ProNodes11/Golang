@@ -117,7 +117,7 @@ func GetAvailableBalance(address string, api string) (ress string) {
 	 }
 	return ress
 }
-func GetDelegatedBalance(address string, api string) (string) {
+func GetDelegatedBalance(address string, api string) (ress string) {
 	resp, err := http.Get(api + "/cosmos/staking/v1beta1/delegations/" + address)
    if err != nil {
       log.Fatalln(err)
@@ -130,7 +130,6 @@ func GetDelegatedBalance(address string, api string) (string) {
 	 if err := json.Unmarshal([]byte(body), &response); err != nil{
 		 log.Printf("Ошибка")
 	 }
-	 var ress string
 	 var fullamount float64
 	 if len(response.DelegationResponses) == 0 {
 		 ress = "0.0"
@@ -145,7 +144,7 @@ func GetDelegatedBalance(address string, api string) (string) {
 	return ress
 }
 
-func GetUnboundingBalance(address string, api string) (string) {
+func GetUnboundingBalance(address string, api string) (ress string) {
 	resp, err := http.Get(api + "/cosmos/staking/v1beta1/delegators/" + address + "/unbonding_delegations")
    if err != nil {
       log.Fatalln(err)
@@ -158,7 +157,6 @@ func GetUnboundingBalance(address string, api string) (string) {
 	 if err := json.Unmarshal([]byte(body), &response); err != nil{
 		 log.Printf("Ошибка")
 	 }
-	 var ress string
 	 var fullamount float64
 	 if len(response.UnbondingResponses) == 0 {
 		 ress = "0.0"
@@ -173,7 +171,7 @@ func GetUnboundingBalance(address string, api string) (string) {
 	return ress
 }
 
-func GetRewardBalance(address string, api string) (string) {
+func GetRewardBalance(address string, api string) (ress string) {
 	resp, err := http.Get(api + "/cosmos/distribution/v1beta1/delegators/" + address + "/rewards")
    if err != nil {
       log.Fatalln(err)
@@ -186,7 +184,6 @@ func GetRewardBalance(address string, api string) (string) {
 	 if err := json.Unmarshal([]byte(body), &response); err != nil{
 		 log.Printf("Ошибка")
 	 }
-	 var ress string
 	 var fullamount float64
 	 if len(response.Total) == 0 {
 		 ress = "0.0"
@@ -201,7 +198,7 @@ func GetRewardBalance(address string, api string) (string) {
 	return ress
 }
 
-func CheckWallet(address string, api string) (bool) {
+func CheckWallet(address string, api string) (ress bool) {
 	resp, err := http.Get(api + "/cosmos/bank/v1beta1/balances/" + address)
    if err != nil {
       log.Fatalln(err)
@@ -214,7 +211,6 @@ func CheckWallet(address string, api string) (bool) {
 	 if err := json.Unmarshal([]byte(body), &response); err != nil{
 		 log.Printf("Ошибка")
 	 }
-	 var ress bool
 	 if response.Code == 3 {
 		 ress = false
 	 } else {
