@@ -196,8 +196,8 @@ func GetRewardBalance(address string, api string) (string) {
 				if amount, err := strconv.ParseFloat(response.Total[i].Amount, 64); err == nil {
 				 fullamount += amount
 				 }
+			  ress = fmt.Sprintf("%.6f %s", fullamount / 1000000.0, response.Total[i].Denom)
 			 }
-			ress = fmt.Sprintf("%.6f %s", fullamount / 1000000.0, response.Total[i].Denom)
 	}
 	return ress
 }
