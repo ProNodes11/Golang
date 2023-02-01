@@ -188,14 +188,18 @@ func GetRewardBalance(address string, api string) (string) {
 		 log.Printf("Ошибка")
 	 }
 	 var ress string
+	 var fullamount float64
 	 if len(response.Total) == 0 {
 		 ress = "0.0"
 		 } else {
-			 if amount, err := strconv.ParseFloat(response.Total[0].Amount, 64); err == nil {
-		 	 ress = fmt.Sprintf("%.6f %s", amount / 1000000.0, response.Total[0].Denom)
-	 	}
- 	}
-	 return ress
+		  for i := range response.UnbondingResponses{
+				if amount, err := strconv.ParseFloat(response.Total[i].Amount, 64); err == nil {
+				 fullamount += amount
+				 }
+			 }
+			ress = fmt.Sprintf("%.6f %s", fullamount / 1000000.0, response.Total[i].Denom)
+	}
+	return ress
 }
 
 func CheckWallet(address string, api string) (bool) {
