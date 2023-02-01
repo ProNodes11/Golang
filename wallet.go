@@ -199,7 +199,6 @@ func GetRewardBalance(address string, api string) (string) {
 }
 
 func CheckWallet(address string, api string) (bool) {
-	log.Println(api + "/cosmos/bank/v1beta1/balances/" + address)
 	resp, err := http.Get(api + "/cosmos/bank/v1beta1/balances/" + address)
    if err != nil {
       log.Fatalln(err)
