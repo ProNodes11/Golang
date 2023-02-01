@@ -91,7 +91,7 @@ func GetBalance(address string, api string) (ress string) {
 }
 
 
-func GetAvailableBalance(address string, api string) (string) {
+func GetAvailableBalance(address string, api string) (ress string) {
 	resp, err := http.Get(api + "/cosmos/bank/v1beta1/balances/" + address)
    if err != nil {
       log.Fatalln(err)
@@ -104,7 +104,6 @@ func GetAvailableBalance(address string, api string) (string) {
 	 if err := json.Unmarshal([]byte(body), &response); err != nil{
 		 log.Printf("Ошибка")
 	 }
-	 var ress string
 	 var fullamount float64
 	 if len(response.Balances) == 0 {
 		 ress = "0.0"
