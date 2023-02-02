@@ -1,0 +1,2602 @@
+{
+  "proposals": [
+    {
+      "proposal_id": "1",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "The Crescent Ethos",
+        "description": "This governance proposal is to obtain a general approval from the Crescent community about implementation of the team’s proposed direction and architectural decision making structure that will guide Crescent’s maturity as a safe, functional, and innovative DeFi Hub. Details of the proposal can be found at IPFS link. \n- https://ipfs.io/ipfs/QmV6cRDRdDQYWojiaUxYgPrN8PT9tXMu5NFVj3txsjKcpj \n- https://bafybeidenelcdglfqrqclwhqb2fdx5jcmypay7rq7wgpcurjdtu2pinqvq.ipfs.infura-ipfs.io"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "12189850795930",
+        "abstain": "154746049406",
+        "no": "13672808918",
+        "no_with_veto": "8755745511"
+      },
+      "submit_time": "2022-04-13T00:01:00.659411550Z",
+      "deposit_end_time": "2022-04-18T00:01:00.659411550Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-04-13T00:01:00.659411550Z",
+      "voting_end_time": "2022-04-18T00:01:00.659411550Z"
+    },
+    {
+      "proposal_id": "2",
+      "content": {
+        "@type": "/crescent.farming.v1beta1.PublicPlanProposal",
+        "title": "Crescent Team proposes the initial LP farming plan with 6 selected pools",
+        "description": "This proposal is to activate LP farming rewards on Crescent Network. Initial liquidity pools are selected to invite the liquidity from core Cosmos Ecosystems, which are Cosmos Hub and Terra. UST from Terra is included to provide stable coin functionality on Crescent DEX with most natural interchain connectivity provided via IBC. Below are coins and liquidity pool pairs included in this initial farming plan.\n\n- 5 Coins : CRE, bCRE(bonded CRE), ATOM, LUNA, UST\n- Liquidity Pool Pairs and their farming weights\n    - bCRE / CRE : 25%\n    - bCRE / UST : 15%\n    - ATOM / bCRE : 35%\n    - LUNA / bCRE : 15%\n    - ATOM / UST : 5%\n    - LUNA / UST : 5%",
+        "add_plan_requests": [
+          {
+            "name": "2022.04.13-PublicLPFarmingPlan-6Pools",
+            "farming_pool_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "termination_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "staking_coin_weights": [
+              {
+                "denom": "pool1",
+                "amount": "0.250000000000000000"
+              },
+              {
+                "denom": "pool2",
+                "amount": "0.150000000000000000"
+              },
+              {
+                "denom": "pool3",
+                "amount": "0.350000000000000000"
+              },
+              {
+                "denom": "pool4",
+                "amount": "0.150000000000000000"
+              },
+              {
+                "denom": "pool5",
+                "amount": "0.050000000000000000"
+              },
+              {
+                "denom": "pool6",
+                "amount": "0.050000000000000000"
+              }
+            ],
+            "start_time": "2022-04-13T00:00:00Z",
+            "end_time": "2023-04-13T00:00:00Z",
+            "epoch_amount": [
+              {
+                "denom": "ucre",
+                "amount": "93700000000"
+              }
+            ],
+            "epoch_ratio": "0.000000000000000000"
+          }
+        ],
+        "modify_plan_requests": [
+        ],
+        "delete_plan_requests": [
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "12541770558237",
+        "abstain": "80417470066",
+        "no": "42744640269",
+        "no_with_veto": "5991462162"
+      },
+      "submit_time": "2022-04-13T03:59:33.722883478Z",
+      "deposit_end_time": "2022-04-18T03:59:33.722883478Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-04-13T03:59:33.722883478Z",
+      "voting_end_time": "2022-04-18T03:59:33.722883478Z"
+    },
+    {
+      "proposal_id": "3",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Airdrop Claim Proposal",
+        "description": "This proposal is to allow users to vote and claim their airdrops."
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "11164812150036",
+        "abstain": "282740232601",
+        "no": "11434189595",
+        "no_with_veto": "13461476554"
+      },
+      "submit_time": "2022-04-20T23:10:30.166703033Z",
+      "deposit_end_time": "2022-04-25T23:10:30.166703033Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-04-20T23:14:36.794544298Z",
+      "voting_end_time": "2022-04-25T23:14:36.794544298Z"
+    },
+    {
+      "proposal_id": "4",
+      "content": {
+        "@type": "/crescent.farming.v1beta1.PublicPlanProposal",
+        "title": "Reallocation of LP farming plan",
+        "description": "This proposal is to approve reallocation of current LP farming rewards of Terra’s LUNA and UST paired pools in preemptive action for introducing new pool pairs in the near future. \n  \n The grounds for decision making are as follows: \n  \n- LUNA and UST pool incentivizations were implemented to invite liquidity from Terra, which maintained its position as a core Cosmos Ecosystem. Due to unfortunate circumstances, the current tokenomics of UST have created reason for providing investment alternatives for users of Crescent. \n- As of now, LUNA, a representative token of the Terra Ecosystem, has a probability of no longer maintaining an ecosystem that presents a stable coin functionality for Crescent DEX. \n- As can be observed by the extreme APR hike on said pools, Terra-based pools have significantly decreased in investment demand and prolonged allocation of LP incentives to LUNA and UST pools present degraded efficiency of liquidity and rewards allocation. \n  \n If passed, Liquidity Pool Pairs and their farming weights will be adjusted to the below: \n  \n- bCRE / CRE: 25% \n- bCRE / UST: 0% \n- ATOM / bCRE: 35% \n- LUNA / bCRE: 0% \n- ATOM / UST: 0% \n- LUNA / UST: 0% \n- Module Account: 40% \n  \n In order to expand the integration of pool pairs that will benefit Crescent Network, the unrewarded LP farming rewards of the LUNA and UST pools will be accumulated in a module account, which can be released to newly introduced pools in the near future for increased incentivization to migrate liquidity from external blockchains. \n  \n Under the guidance of the community approved Crescent Ethos, the foundation will continue extensive research into alternative assets to be integrated into Crescent DEX.",
+        "add_plan_requests": [
+        ],
+        "modify_plan_requests": [
+          {
+            "plan_id": "1",
+            "name": "",
+            "farming_pool_address": "",
+            "termination_address": "",
+            "staking_coin_weights": [
+              {
+                "denom": "pool1",
+                "amount": "0.416666666666666667"
+              },
+              {
+                "denom": "pool3",
+                "amount": "0.583333333333333333"
+              }
+            ],
+            "start_time": null,
+            "end_time": null,
+            "epoch_amount": [
+              {
+                "denom": "ucre",
+                "amount": "56220000000"
+              }
+            ],
+            "epoch_ratio": "0.000000000000000000"
+          }
+        ],
+        "delete_plan_requests": [
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "15633844105689",
+        "abstain": "61819835592",
+        "no": "65894221456",
+        "no_with_veto": "1563595003"
+      },
+      "submit_time": "2022-05-12T11:04:53.265723681Z",
+      "deposit_end_time": "2022-05-17T11:04:53.265723681Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-05-12T11:04:53.265723681Z",
+      "voting_end_time": "2022-05-17T11:04:53.265723681Z"
+    },
+    {
+      "proposal_id": "5",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Signalling Proposal for Expanding Pools displayed on UI",
+        "description": "This proposal is for the display of bridged assets on Crescent DEX in an effort to expand pool alternatives for users. \n  \n The UI whitelisting of the pools below DOES NOT correlate to a native token incentivization. As stated in the Crescent Ethos, incentivization of bridged assets will be done in a conservative manner, with in-depth, thorough research of the bridge’s security, ecosystem involvement, and capability for expanded interchain functionalities. \n  \n If passed, Crescent DEX will create a pair and pool, as well as display the following assets in the UI: \n  \n- USDC (Bridged via Axelar and Gravity Bridge) \n- ETH (Bridged via Axelar and Gravity Bridge) \n- Other native tokens \n  \n The UI whitelisting of the aforementioned pools provides the following for Crescent Network: \n  \n- An alternate stablecoin option to utilize \n- Bridged assets from ETH market for future integration into Crescent utilities \n  \n The Foundation will continue research and evaluation of the bridges above before proposing native token incentivization of additional pools."
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "15764420800999",
+        "abstain": "47322953252",
+        "no": "3534335633",
+        "no_with_veto": "7886428"
+      },
+      "submit_time": "2022-05-12T11:10:59.318150875Z",
+      "deposit_end_time": "2022-05-17T11:10:59.318150875Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-05-12T11:10:59.318150875Z",
+      "voting_end_time": "2022-05-17T11:10:59.318150875Z"
+    },
+    {
+      "proposal_id": "6",
+      "content": {
+        "@type": "/crescent.farming.v1beta1.PublicPlanProposal",
+        "title": "Reallocation of LP Farming Plan to include minimal incentives of bridged assets",
+        "description": "1. Introduction\n    \n    This governance proposal is to launch initial minimal farming reward for bridge assets from Axelar and Gravity Bridge. Incentivized assets include ETH and USDC.\n    \n    Crescent Network would like to adopt assets from the bridges to provide users more variety of options for trading and LP investment.\n    \n    However, because the security of both bridges are not fully reviewed by Crescent Team yet, the amount of farming rewards for these assets will be relatively small, until we have enough confidence on the security of the bridges in the future.\n    \n    The newly incentivized pools are a result of the previously announced community discussion that took place at Crescent Network Commonwealth for 7 days. The key takeaway was to introduce and implement incentives to the ETH / bCRE pool in addition to the proposed bCRE / USDC pool.\n    \n    Reasoning for the immediate incentivization and consideration of other bridged assets can be found at the Commonwealth Proposal Discussion:\n    \n    https://commonwealth.im/crescent-forum/discussion/4962-minimal-incentivization-of-bridged-assets\n    \n2. Farming Plans\n    - New Assets on UI\n        - ETH.a : ETH from Axelar\n        - USDC.a : USDC from Axelar\n        - ETH.g : ETH from Gravity Bridge\n        - USDC.g : USDC from Gravity Bridge\n    \n    - Newly Incentivized Farming Pools\n        - bCRE / USDC.axl : 1%\n        - bCRE / USDC.grv : 1%\n        - ETH.axl / bCRE : 1%\n        - ETH.grv / bCRE : 1%\n    \n    - Existing Incentivized Farming Pools and Module Account\n        - CRE / bCRE : 25%\n        - ATOM / bCRE : 35%\n        - Module Account : 36%\n        \n        The module account will continue to be released to newly introduced pools in the near future for increased incentivization to migrate liquidity from external blockchains.\n        \n3. Reasoning\n    - Bridges\n        - Most active bridges in Cosmos Ecosystem\n        - Active partnership under progress with Crescent Team\n        - Minimum necessary evidence of security is satisfied\n    - Assets\n        - ETH\n            - The most popular asset for many DeFi products\n            - Having the second biggest market capital in crypto\n        - USDC\n            - Stable coin with 100% backed by fiat\n            - Most secure stable coin with no significant systemic risk\n    - Minimal Amount of Initial Farming (1% farming weight each)\n        - Initial farming rewards will be minimal because the security of both bridges are not fully reviewed by Crescent Team yet\n        - We will suggest higher farming rewards for the bridge assets when the team has stronger confidence in both bridge technologies\n        \n4. Future Plans\n    - for bCRE / ETH pools\n        - gradually increase the farming rewards to form deeper liquidity once security and ecosystem contribution of bridged assets are assessed\n    - for ETH / ETH \u0026 USDC / USDC pools\n        - **in June :** farming rewards will be migrated to “**Ranged LP**” to provide significantly amplified liquidity from smaller TVL\n    - for ETH / USDC pools\n        - **in July :**  large liquidity will be provided into orderbook when “**Market Maker Incentive**” alive\n\n5. Considerations\n    - The assets from both bridges are not fully reviewed by Crescent Team yet.\n    - Security risk upon each bridge should be fully acknowledged who decides to possess such assets in Crescent Network.",
+        "add_plan_requests": [
+        ],
+        "modify_plan_requests": [
+          {
+            "plan_id": "1",
+            "name": "",
+            "farming_pool_address": "",
+            "termination_address": "",
+            "staking_coin_weights": [
+              {
+                "denom": "pool1",
+                "amount": "0.390625000000000000"
+              },
+              {
+                "denom": "pool12",
+                "amount": "0.015625000000000000"
+              },
+              {
+                "denom": "pool14",
+                "amount": "0.015625000000000000"
+              },
+              {
+                "denom": "pool15",
+                "amount": "0.015625000000000000"
+              },
+              {
+                "denom": "pool17",
+                "amount": "0.015625000000000000"
+              },
+              {
+                "denom": "pool3",
+                "amount": "0.546875000000000000"
+              }
+            ],
+            "start_time": null,
+            "end_time": null,
+            "epoch_amount": [
+              {
+                "denom": "ucre",
+                "amount": "59968000000"
+              }
+            ],
+            "epoch_ratio": "0.000000000000000000"
+          }
+        ],
+        "delete_plan_requests": [
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "12043019233851",
+        "abstain": "56793784536",
+        "no": "2748914779",
+        "no_with_veto": "1489453531"
+      },
+      "submit_time": "2022-05-27T11:05:25.701096611Z",
+      "deposit_end_time": "2022-06-01T11:05:25.701096611Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-05-27T11:05:25.701096611Z",
+      "voting_end_time": "2022-06-01T11:05:25.701096611Z"
+    },
+    {
+      "proposal_id": "7",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Approve Imperator as Crescent Liquid Staking Validator",
+        "description": "According to the last announcement for adding a new Liquid Staking Validator, we had got an LSV application form for 2 weeks. Based on the scoring system that we opened and discussed on the commonwealth, we extracted the top 3 candidates out of 27 candidates.\n\n**Voting YES to this proposal means that you approve ‘imperator’ to be adopted as a new liquid staking validator.** \n\nonly YES votes will be counted. Voting NO, NO WITH VETO, or ABSTAIN will have no effect on which candidate is adopted. (However, when the number of the voting amount is significantly different among each candidate, No votes can be reflected)\n\nVoting procedures summary:\n\n- Votes by existing LSV will not be counted for this proposal\n- Only one candidate that receives the highest number of CRE for ‘Yes’ voting, can only proceed to the next step\n- The final validator needs to be agreed upon via on-chain governance(existing LSV need to vote)\n- New LSV is added upon the passing of the governance proposal\n\nLink to the docs for all candidates scoring: \n\nhttps://docs.google.com/spreadsheets/d/14CPUXiIWXSVvW2HR7E3VVRjPjjKCVW_W/edit?usp=sharing\u0026ouid=113404813873563669465\u0026rtpof=true\u0026sd=true\n\nHere’s the scoring system that was discussed before: \nhttps://commonwealth.im/crescent-forum/discussion/5199-discussion-liquid-staking-validator-scoring-system\n\n**Qualitative Scoring Criteria submitted by imperator**\n\nDetails for this section can be found at the following IPFS link below.\n\nhttps://ipfs.infura.io/ipfs/QmbXkrKSeePDU9AWmpvyFhUAaWRkvGrKAgkWpHFELiBeLS\n\nhttps://ipfs.io/ipfs/QmbXkrKSeePDU9AWmpvyFhUAaWRkvGrKAgkWpHFELiBeLS"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "3055009976195",
+        "abstain": "11680013997237",
+        "no": "24489896142",
+        "no_with_veto": "597740643"
+      },
+      "submit_time": "2022-06-24T08:24:37.240815317Z",
+      "deposit_end_time": "2022-06-29T08:24:37.240815317Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-06-24T08:24:37.240815317Z",
+      "voting_end_time": "2022-06-29T08:24:37.240815317Z"
+    },
+    {
+      "proposal_id": "8",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Approve Stakin as Crescent Liquid Staking Validator",
+        "description": "According to the last announcement for adding a new Liquid Staking Validator, we had got an LSV application form for 2 weeks. Based on the scoring system that we opened and discussed on the commonwealth, we extracted the top 3 candidates out of 27 candidates.\n\n**Voting YES to this proposal means that you approve ‘Stakin’ to be adopted as a new liquid staking validator.** \n\nonly YES votes will be counted. Voting NO, NO WITH VETO, or ABSTAIN will have no effect on which candidate is adopted. (However, when the number of the voting amount is significantly different among each candidate, No votes can be reflected)\n\nVoting procedures summary:\n\n- Votes by existing LSV will not be counted for this proposal\n- Only one candidate that receives the highest number of CRE for ‘Yes’ voting, can only proceed to the next step\n- The final validator needs to be agreed upon via on-chain governance(existing LSV need to vote)\n- New LSV is added upon the passing of the governance proposal\n\nLink to the docs for all candidates scoring: \n\nhttps://docs.google.com/spreadsheets/d/14CPUXiIWXSVvW2HR7E3VVRjPjjKCVW_W/edit?usp=sharing\u0026ouid=113404813873563669465\u0026rtpof=true\u0026sd=true\n\nHere’s the scoring system that was discussed before: \nhttps://commonwealth.im/crescent-forum/discussion/5199-discussion-liquid-staking-validator-scoring-system\n\n**Qualitative Scoring Criteria submitted by Stakin**\n\nDetails for this section can be found at the following IPFS link below.\n\nhttps://bafybeievwqztzs7os557xxns7biqjz7hrkdpe7vdd36dzqhbnofb6uwtlu.ipfs.infura-ipfs.io/\n\nhttps://ipfs.io/ipfs/QmYR2ptMXKtt3uJ3UvDX3XVTimaqtpoGMg4coffpiwXuMN"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "2401938715910",
+        "abstain": "12123736146101",
+        "no": "116223257886",
+        "no_with_veto": "6139098138"
+      },
+      "submit_time": "2022-06-24T08:27:50.316654116Z",
+      "deposit_end_time": "2022-06-29T08:27:50.316654116Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-06-24T08:27:50.316654116Z",
+      "voting_end_time": "2022-06-29T08:27:50.316654116Z"
+    },
+    {
+      "proposal_id": "9",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Approve Citadel.one as Crescent Liquid Staking Validator",
+        "description": "According to the last announcement for adding a new Liquid Staking Validator, we had got an LSV application form for 2 weeks. Based on the scoring system that we opened and discussed on the commonwealth, we extracted the top 3 candidates out of 27 candidates.\n\n**Voting YES to this proposal means that you approve ‘Citadel.one’ to be adopted as a new liquid staking validator.** \n\nonly YES votes will be counted. Voting NO, NO WITH VETO, or ABSTAIN will have no effect on which candidate is adopted. (However, when the number of the voting amount is significantly different among each candidate, No votes can be reflected)\n\nVoting procedures summary:\n\n- Existing LSV should not vote, and votes by existing LSV will not be counted for this proposal\n- Only one candidate that receives the highest number of CRE for ‘Yes’ voting, can only proceed to the next step\n- The final validator needs to be agreed upon via on-chain governance(existing LSV need to vote)\n- New LSV is added upon the passing of the governance proposal\n\nLink to the docs for all candidates scoring: \n\nhttps://docs.google.com/spreadsheets/d/14CPUXiIWXSVvW2HR7E3VVRjPjjKCVW_W/edit?usp=sharing\u0026ouid=113404813873563669465\u0026rtpof=true\u0026sd=true\n\nHere’s the scoring system that was discussed before: \nhttps://commonwealth.im/crescent-forum/discussion/5199-discussion-liquid-staking-validator-scoring-system\n\n**Qualitative Scoring Criteria submitted by Citadel.one**\n\nHow will you contribute to the Crescent Ecosystem in the future?\n\n:Integration into Citadel.one platform, marketing, educational page, governance application\n\nWhat is your long-term plan to sustain the Crescent node?\n\n:Advanced technical monitoring for sustaining the tech side + growing the community\n\nInfra specs and operation specs\n\n:We use advanced tooling to make sure everything is running smoothly on our validator side\n\n1) Grafana for monitoring of our nodes' CPU load, uptime, current and missed blocks and random-access memory usage.\n2) ELK Stack software for building analytics, errors search, failure mode and effects analysis.\n3) Zabbix for hardware, hard disk and memory load monitoring.\n4) just in case - Telegram bot that sends notifications if something out of order occurs."
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "2667241482936",
+        "abstain": "11935829287389",
+        "no": "126591249092",
+        "no_with_veto": "2347079793"
+      },
+      "submit_time": "2022-06-24T08:31:31.748235049Z",
+      "deposit_end_time": "2022-06-29T08:31:31.748235049Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-06-24T08:31:31.748235049Z",
+      "voting_end_time": "2022-06-29T08:31:31.748235049Z"
+    },
+    {
+      "proposal_id": "10",
+      "content": {
+        "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
+        "title": "Community Fund Spend Proposal - Bug Bounty",
+        "description": "In alignment with Crescent Network’s principle of smoothly onboarding users, the necessity for testing new utilities is apparent. Keeping in mind that in an ecosystem flooded by traditional AMM DEXs, Crescent aims to provide a hybrid trading experience that synergizes AMM and orderbook.\n\nWith the imminent launch of orderbook and ranged liquidity UI, the foundation will invite users to test and get to know Crescent’s new utilities through the mooncat-1-1 testnet. When the testnet is opened publicly, users can experience the innovative feature before its debut on mainnet.\n\nBeing a core function of Crescent DEX, and one that is highly anticipated by users, we want to incorporate the community in the road to a perfect orderbook and ranged liquidity that can be utilized smoothly by all.\n\nAs a team that always prioritizes user safety and the integrity of the network, we would like users’ feedback, both on an experience basis, as well as technical. With that, we propose the allocation of 100,000 CRE from the Community Fund to be utilized in a Bug Bounty on the Crescent testnet. This will make sure that those actively participating in the improvement of our network will be accurately rewarded.\n\nIn the case of a bug being reported and scored among the eligible criteria(Criteria below), the user will be rewarded via the Foundation’s multi-sig wallet(cre1u9jxn6l7seq5jjej4w6etpdxufphwfuunljr4e), which will receive and distribute the bug bounty rewards, and the remaining funds will be returned to the Community Fund. The distribution of each rewarded case will be reported to the community for clarity and visibility.\n\nUsers participating in the testnet can report found bugs through the Bug Reporting Form (To be announced upon opening of public testnet), upon which it will be categorized and judged by the Foundation according to the level of importance stated below:\n\n- Critical: 20,000 CRE\n    - Exploitation of liquidity, chain halting, stolen funds, token inflation bug\n- Major: 5000 CRE\n    - Orderbook specific core bug other than Critical bug, limited financial exploitation\n- Minor:  500 CRE\n    - Judged case-by-case\n    - *Note that MOST front-end bugs will be categorized as Minor unless deemed critical to the network\n\nThe rewarding will be based on first-come-first serve, and repeated or already reported bugs will not be rewarded again.\n\nAs always, the Crescent Network team always appreciates the participation of the vibrant community, and we would like to continue building together for a prolonged sustainable and secure service for Cosmonauts and beyond. Through the cooperative testing between the dev team and our great community, we will work towards orderbook and ranged liquidity UI that have smooth UX with airtight security. ",
+        "recipient": "cre1u9jxn6l7seq5jjej4w6etpdxufphwfuunljr4e",
+        "amount": [
+          {
+            "denom": "ucre",
+            "amount": "100000000000"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "16240440988490",
+        "abstain": "68866637063",
+        "no": "1099593283",
+        "no_with_veto": "315466090"
+      },
+      "submit_time": "2022-06-24T09:08:58.115010574Z",
+      "deposit_end_time": "2022-06-29T09:08:58.115010574Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-06-24T09:08:58.115010574Z",
+      "voting_end_time": "2022-06-29T09:08:58.115010574Z"
+    },
+    {
+      "proposal_id": "11",
+      "content": {
+        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+        "title": "Confirm Imperator as Crescent Liquid Staking Validator",
+        "description": "This is the final proposal for adding the new LSV, Imperator. As we made an announcement to the community, top3 validators went through each approval proposal. As a result, Imperator got the highest number of ‘yes’ voting. Therefore, We’d like to make a confirmation proposal for Imperator as a new liquid staking validator.\n\nVoting YES to this proposal means that you confirm Imperator to be adopted as Crescent new LSV. \n\nAs soon as this proposal pass, Imperator will be added to Crescent LSV group automatically. For the confirmation proposal, existing LSVs need to participate in voting.",
+        "changes": [
+          {
+            "subspace": "liquidstaking",
+            "key": "WhitelistedValidators",
+            "value": "[\n                {\n                    \"validator_address\": \"crevaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4ep74jz\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper17muws0zgrd0vzh37guea7960ym7aqf2j9v6l7s\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1ls9w867xu0q5zjze5vrakfa2zluahtv44gwn7y\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper10rdgqczxyp69x9llq62cc3xs4w8w0k7p42x9jq\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1dad8evf6vw72seljuzhjgurq48egaqfndvq38v\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1zuucyy5v49lwnrdupqqafqdu29qy6wgnadwkuu\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper14lultfckehtszvzw4ehu0apvsr77afvy35naks\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1qvdyzetkqq6rt4xu234xpvee5wt45a75rt2afe\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper18zvtvhzrqq5ny2jpmlc6new9k4c4uzzh6tcfpt\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1pxexdsms050v35zu0vc07dk4ml647lsrjff52g\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper130mdu9a0etmeuw52qfxk73pn0ga6gawk9cyq6a\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1hu64xnmav0m680n87pe5hw6yr2v92tw9pshrqf\",\n                    \"target_weight\": \"10\"    \n                }\n            ]"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "17681194536290",
+        "abstain": "381792726481",
+        "no": "38949310985",
+        "no_with_veto": "75041748"
+      },
+      "submit_time": "2022-07-04T09:11:07.638188652Z",
+      "deposit_end_time": "2022-07-09T09:11:07.638188652Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-07-04T09:11:07.638188652Z",
+      "voting_end_time": "2022-07-09T09:11:07.638188652Z"
+    },
+    {
+      "proposal_id": "12",
+      "content": {
+        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+        "title": "v2.0.0: Orderbook and Ranged Liquidity Core Upgrade",
+        "description": "Governance Proposal #12: Orderbook and Ranged Liquidity Core Upgrade\\n\\nThis on-chain governance proposal is to adopt crescent v2.0.0 which includes on-chain upgrades and changes. By voting YES to this proposal, you approve of adding the following changes below:\\n\\n- refactor matching logic and add ranged liquidity pools [#37](https://github.com/crescent-network/crescent/pull/37)\\n- add mint pool address for mint module, update budget plans for mint pool [#35](https://github.com/crescent-network/crescent/pull/35)\\n- use time-based queued staking and reserve unharvested rewards [#33](https://github.com/crescent-network/crescent/pull/33)\\n- bump cosmos-sdk to v0.45.3, ibc-go to v2.2.0 [#31](https://github.com/crescent-network/crescent/pull/31)\\n\\nThe upgrade will take place at height 1384100, approximately UTC 2022-07-18 12:00:00.\\n\\nFor full instructions on performing the upgrade, see https://github.com/crescent-network/launch/blob/main/mainnet/crescent-1/upgrades/v2.0.0.md",
+        "plan": {
+          "name": "v2.0.0",
+          "time": "0001-01-01T00:00:00Z",
+          "height": "1384100",
+          "info": "v2.0.0: Orderbook and Ranged Liquidity Core Upgrade",
+          "upgraded_client_state": null
+        }
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "17912443620951",
+        "abstain": "2861079980",
+        "no": "320862037",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2022-07-13T11:47:40.341571476Z",
+      "deposit_end_time": "2022-07-18T11:47:40.341571476Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-07-13T11:47:40.341571476Z",
+      "voting_end_time": "2022-07-18T11:47:40.341571476Z"
+    },
+    {
+      "proposal_id": "13",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Pool Creation Fee Increase Proposal",
+        "description": "This proposal is to increase the pool creation fee on Crescent.\n\nCurrent fee: 100 CRE\n\nProposed increase: 1000 CRE\n\nThis increase is in consideration of the change in the price of CRE since genesis.\n\nBy voting YES, you approve of the pool creation fee increase to 1000 CRE upon the passing of this proposal."
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "15055974256972",
+        "abstain": "73660557494",
+        "no": "9095410371",
+        "no_with_veto": "7151632640"
+      },
+      "submit_time": "2022-07-18T14:09:10.133959779Z",
+      "deposit_end_time": "2022-07-23T14:09:10.133959779Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-07-18T14:09:10.133959779Z",
+      "voting_end_time": "2022-07-23T14:09:10.133959779Z"
+    },
+    {
+      "proposal_id": "14",
+      "content": {
+        "@type": "/crescent.farming.v1beta1.PublicPlanProposal",
+        "title": "Reallocation of LP farming plan to include ranged pools",
+        "description": "Reallocation of LP farming plan to include ranged pools\n\nThis governance proposal is to initiate reallocation of the current farming plan to accommodate newly created pools and bootstrap ranged liquidity, as part of Crescent Network’s vision of capital-efficient and sustainable liquidity.\n\nThe current farming plan consists heavily on the: ATOM/bCRE, and bCRE/CRE pairs, with minimal incentives allocated to pairs with bridged assets. The plan secured liquidity in the native assets of Crescent Network and the Cosmos Ecosystem.\n\nWith the introduction of ranged liquidity on Crescent DEX, the farming weights need to be adjusted to accurately reward liquidity providers, create investment alternatives through ranged pools, and ultimately establish sufficient liquidity in pools that will synergize with Crescent Boost. In the case of the bCRE/CRE pool, the amplification of a user’s provided liquidity will be appx. 54X, and for ETH/ETH and USDC/USDC, 200X, resulting in more effective liquidity within the set range of the pools.\n\nAs stated in the Crescent Ethos, the network will focus on stable and major tokens, with this allocation plan to vitalize ATOM and USDC, which are key assets as well as pools such as ATOM/USDC to be used in Crescent Boost by becoming the target pairs of the new upcoming utility. ETH liquidity will be more available for trading through Market Maker incentives in October, and expanded investment opportunities once key utilities are firmly established.\n\nThe proposed reallocation of farming weights is as below:\n\n- Newly Incentivized Farming Pools\n    - bCRE / CRE Ranged Pool (1.063~1.15): 5%\n    - ATOM / USDC.axl: 10%\n    - ATOM / USDC.grv: 10%\n    - ETH.axl / ETH.grv Ranged Pool(±1%): 2%\n    - USDC.axl / USDC.grv Ranged Pool(±1%): 2%\n    - GRAV / bCRE: 1% (For 50 days from passing of proposal)\n- Farming Weight Adjustment\n    - bCRE / CRE: 25% \u003e 20%\n    - bCRE / USDC.axl: 1% \u003e 5%\n    - bCRE / USDC.grv: 1% \u003e 5%\n    - WETH.axl / bCRE: 1% \u003e 0%\n    - WETH.grv / bCRE 1% \u003e 0%\n    - Module Account: 36% \u003e 5%   \n",
+        "add_plan_requests": [
+          {
+            "name": "2022.07.23-2022.09.11-GRAV/bCRE",
+            "farming_pool_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "termination_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "staking_coin_weights": [
+              {
+                "denom": "pool10",
+                "amount": "1.000000000000000000"
+              }
+            ],
+            "start_time": "2022-07-23T12:00:00Z",
+            "end_time": "2022-09-11T12:00:00Z",
+            "epoch_amount": [
+              {
+                "denom": "ucre",
+                "amount": "937000000"
+              }
+            ],
+            "epoch_ratio": "0.000000000000000000"
+          }
+        ],
+        "modify_plan_requests": [
+          {
+            "plan_id": "1",
+            "name": "",
+            "farming_pool_address": "",
+            "termination_address": "",
+            "staking_coin_weights": [
+              {
+                "denom": "pool1",
+                "amount": "0.212770000000000000"
+              },
+              {
+                "denom": "pool12",
+                "amount": "0.053190000000000000"
+              },
+              {
+                "denom": "pool17",
+                "amount": "0.053190000000000000"
+              },
+              {
+                "denom": "pool18",
+                "amount": "0.106380000000000000"
+              },
+              {
+                "denom": "pool19",
+                "amount": "0.106380000000000000"
+              },
+              {
+                "denom": "pool20",
+                "amount": "0.021280000000000000"
+              },
+              {
+                "denom": "pool21",
+                "amount": "0.021280000000000000"
+              },
+              {
+                "denom": "pool22",
+                "amount": "0.053190000000000000"
+              },
+              {
+                "denom": "pool3",
+                "amount": "0.372340000000000000"
+              }
+            ],
+            "start_time": null,
+            "end_time": null,
+            "epoch_amount": [
+              {
+                "denom": "ucre",
+                "amount": "88078000000"
+              }
+            ],
+            "epoch_ratio": "0.000000000000000000"
+          }
+        ],
+        "delete_plan_requests": [
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "15044191856983",
+        "abstain": "188254931312",
+        "no": "85308837487",
+        "no_with_veto": "1362100895"
+      },
+      "submit_time": "2022-07-18T15:23:19.025514814Z",
+      "deposit_end_time": "2022-07-23T15:23:19.025514814Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-07-18T15:23:19.025514814Z",
+      "voting_end_time": "2022-07-23T15:23:19.025514814Z"
+    },
+    {
+      "proposal_id": "15",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "3SO, immediate kick-out governance proposal",
+        "description": "**3 Strike Out \u0026 immediate kick-out policy adoption**\n\nThis on-chain governance proposal is to adopt 3 Strike Out \u0026 immediate kick-out policy. \n\nVoting YES to this proposal means that you approve 3 Strike Out \u0026 immediate kick-out policy adoption, following details are as below:\n\n3Strike Out(3SO)\n\n- Stability\n\nBlock missing percentage over 10% every week\n\n- Sustainability\n\nTake over 6-hours in succession without block signing\n\n- Reliability\n\nWhen validator meets 2 items out of 3, they will get 1 strike\n\nBinary upgrade in 3 hours (related to software), Emergency response in 12 hours, Node config upgrade in 24 hours (related with local setting ex, block time control, node parameter)\n\n- Engagement\n\nWhen the validator does not participate in governance actively, Crescent foundation gives a warning. If the validator does not vote even validator gets a warning, they will can 1 strike. Or, If a specific validator’s voting rate is less than 50% since they join LSV. Or when specific validator votes ‘abstain’ habitually in succession\n\n- Performance (https://bit.ly/3bLUeAQ)\n\nWhen proposing Diff(the actual number of proposing blocks compared with voting power) is less than 90% with 2 months of data, the validator gets 1 strike\n\n- Activity (https://bit.ly/3bLUeAQ)\n\nBased on the data we extract every 2 months when a specific validator’s Expected TX share(actual handled TX is divided by expected TX) is less than 50%, that validator gets 1 strike.\n\nImmediate Kick-Out\n\n- set commission rate higher than 20% over 3 days totally(accumulative)\n- Censorship/manipulation on mempool \n- When specific validator censors and then picks or excludes specific transactions in order to get profit\n- Private Transaction Broadcasting\n- When the validator handles the specific transaction without letting other validators know\n- Double signing tombstone (not conducted through governance, will be immediately eliminated by code)\n\nYou can check community discussion for **3 Strike Out \u0026 immediate kick-out** here**:** \n\nhttps://commonwealth.im/crescent-forum/discussion/5983-validator-3-strike-out-immediate-kickout-discussion"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "16334060101290",
+        "abstain": "88984295867",
+        "no": "2105820974",
+        "no_with_veto": "1578385081"
+      },
+      "submit_time": "2022-07-19T03:03:45.509443340Z",
+      "deposit_end_time": "2022-07-24T03:03:45.509443340Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-07-19T03:03:45.509443340Z",
+      "voting_end_time": "2022-07-24T03:03:45.509443340Z"
+    },
+    {
+      "proposal_id": "16",
+      "content": {
+        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+        "title": "Pool Creation Fee Increase Proposal (ParamChange)",
+        "description": "This proposal is to increase the pool creation fee on Crescent.\n\nCurrent fee: 100 CRE\n\nProposed increase: 1000 CRE\n\nThis increase is in consideration of the change in the price of CRE since genesis.\n\nBy voting YES, you approve of the pool creation fee increase to 1000 CRE upon the passing of this proposal.\n\n*Proposal #13 was uploaded incorrectly as a TextProposal, so this proposal is uploaded as the ParamChangeProposal. Please note that the previous proposal will not be valid for on-chain changes.*",
+        "changes": [
+          {
+            "subspace": "liquidity",
+            "key": "PoolCreationFee",
+            "value": "[\n        {\n          \"denom\": \"ucre\",\n          \"amount\": \"1000000000\"\n        }\n      ]"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "16502720809376",
+        "abstain": "52850261460",
+        "no": "5380417870",
+        "no_with_veto": "1393679942"
+      },
+      "submit_time": "2022-07-19T03:39:14.252695088Z",
+      "deposit_end_time": "2022-07-24T03:39:14.252695088Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-07-19T03:39:14.252695088Z",
+      "voting_end_time": "2022-07-24T03:39:14.252695088Z"
+    },
+    {
+      "proposal_id": "17",
+      "content": {
+        "@type": "/crescent.farming.v1beta1.PublicPlanProposal",
+        "title": "Signal Proposal: Farming Plan Reallocation",
+        "description": "Reallocation of LP farming and creation of new pools\n\nThis governance proposal is to initiate reallocation of the current farming plan to include newly created pools and fully utilize the potential of ranged pools for maximum efficiency in trading experience.\n\nThe current farming plan has increased both liquidity and TVL within Crescent DEX. As can be seen by the existing ranged pools, the liquidity of ranged pools are amplified beyond that of basic pools, giving reason for migrating major pairs to implement range. Also, in the Crescent spirit of maximizing utility and efficiency of trading, certain pools have shown no use-cases, exposing reason for being faded out.\n\nRealizing the capital-efficiency and liquidity amplification of ranged pools and orderbook, we must take into consideration of many new major tokens being launched on the Cosmos Ecosystem, and creating a sustainable market for them. According to the Crescent Ethos, our DEX will continue liquidity incubation for major tokens by utilizing our superior utilities.\n\nThe farming weights are always up for discussion, and will be adjusted to include newly launched tokens that have potential for synergy with Crescent DEX in the future according to governance and user demand.\n\nThe Foundation proposes the following farming weights below in consideration of newly listed assets, and capital-efficiency of ranged pools:\n\n- **Newly Incentivized Farming Pools**\n    - ATOM / bCRE Ranged Pool (20~100): 15%\n        - This pair has shown a relatively stable price range during the duration of its existence, giving reason to believe that a ranged pool is possible and will provide a better trading experience through liquidity amplification\n    - BLD / bCRE Ranged Pool (1.0~7.0): 3%\n        - Given the proposed price range, BLD / bCRE pair’s liquidity will be amplified, requiring less TVL for the same trading experience when compared to basic AMM of other DEXs\n        - Farming rewards will commence for 28 days from implementation\n    - GRAV / bCRE Ranged Pool (0.03~0.20): 3%\n        - Continued partnership with Gravity Bridge and expanded implementation of the team’s technology within Crescent DEX (Gravity Bridge to propose renewal of private GRAV incentives)\n    - bCRE / CRE Ranged Pool (1.10~1.20): 5%\n        - Introduction of a smaller farming weight for this pool, and will monitor TVL changes and adjust according to user demand\n- **Farming Weight Adjustment**\n    - bCRE / CRE (Basic Pool): 20% \u003e 10%\n        - Will possibly be replaced with ranged pool as the price discrepancy is predictable\n    - ATOM/bCRE (Basic Pool): 35% \u003e 20%\n        - Possible migration to ranged pool, will monitor changes in TVL and liquidity to adjust accordingly\n    - Reserve(Module Account): 5% \u003e 17%\n        - To be utilized in the incentivization of newly listed tokens\n- **Discontinuation of Farming Rewards**\n    - bCRE / USDC.axl: 5% \u003e 0%\n        - Small trade volume, and can be replaced by multi-hop swap through ATOM\n    - bCRE / USDC.grv: 5% \u003e 0%\n        - Same as above\n    - ETH.axl / ETH.grv Ranged Pool(±1%): 2% \u003e 0%\n        - Relatively small trade volume, and does not have a practical use-case for Crescent DEX\n    - GRAV / bCRE (Basic Pool): 1% \u003e 0%\n        - Replaced by Ranged Pool above for more efficient liquidity\n- **Unchanged Farming Weights**\n    - ATOM / USDC.axl: 10%\n    - ATOM / USDC.grv: 10%\n    - USDC.axl / USDC.grv Ranged Pool (0.99~1.01): 2%\n    - bCRE / CRE Ranged Pool (1.063~1.15): 5%\n- **Note**\n    - Market Maker Incentives will be implemented for WBTC, ETH, ATOM / USDC pairs in the coming months",
+        "add_plan_requests": [
+          {
+            "name": "This plan will provide incentives for BLD/bCRE liquidity pool investors over a period of 28 days",
+            "farming_pool_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "termination_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "staking_coin_weights": [
+              {
+                "denom": "pool24",
+                "amount": "1.000000000000000000"
+              }
+            ],
+            "start_time": "2022-09-14T01:00:00Z",
+            "end_time": "2022-10-12T01:00:00Z",
+            "epoch_amount": [
+              {
+                "denom": "ucre",
+                "amount": "2811000000"
+              }
+            ],
+            "epoch_ratio": "0.000000000000000000"
+          }
+        ],
+        "modify_plan_requests": [
+          {
+            "plan_id": "1",
+            "name": "",
+            "farming_pool_address": "",
+            "termination_address": "",
+            "staking_coin_weights": [
+              {
+                "denom": "pool1",
+                "amount": "0.125000000000000000"
+              },
+              {
+                "denom": "pool18",
+                "amount": "0.125000000000000000"
+              },
+              {
+                "denom": "pool19",
+                "amount": "0.125000000000000000"
+              },
+              {
+                "denom": "pool21",
+                "amount": "0.025000000000000000"
+              },
+              {
+                "denom": "pool22",
+                "amount": "0.062500000000000000"
+              },
+              {
+                "denom": "pool25",
+                "amount": "0.037500000000000000"
+              },
+              {
+                "denom": "pool26",
+                "amount": "0.187500000000000000"
+              },
+              {
+                "denom": "pool27",
+                "amount": "0.062500000000000000"
+              },
+              {
+                "denom": "pool3",
+                "amount": "0.250000000000000000"
+              }
+            ],
+            "start_time": null,
+            "end_time": null,
+            "epoch_amount": [
+              {
+                "denom": "ucre",
+                "amount": "74960000000"
+              }
+            ],
+            "epoch_ratio": "0.000000000000000000"
+          }
+        ],
+        "delete_plan_requests": [
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "17002287935832",
+        "abstain": "11387316671",
+        "no": "155072425513",
+        "no_with_veto": "1445115724"
+      },
+      "submit_time": "2022-09-09T01:00:02.945074658Z",
+      "deposit_end_time": "2022-09-14T01:00:02.945074658Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-09-09T01:00:02.945074658Z",
+      "voting_end_time": "2022-09-14T01:00:02.945074658Z"
+    },
+    {
+      "proposal_id": "18",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Approve Citadel.one as Crescent Liquid Staking Validator",
+        "description": "According to the last announcement for adding a new Liquid Staking Validator, we got an LSV application form for 2 weeks and a feedback period for 1 week. Based on the scoring system that we opened and discussed on the commonwealth, we extracted the top 3 candidates out of 20 candidates.\n\nVoting YES to this proposal means that you approve ‘Citadel.one’ to be adopted as a new liquid staking validator.\n\nOnly YES votes will be counted. Voting NO, NO WITH VETO, or ABSTAIN will have no effect on which candidate is adopted. (However, when the number of the voting amount is significantly different among each candidate, No votes can be reflected)\n\nVoting procedures summary:\n\n- Existing LSV should not vote, and votes by existing LSV will not be counted for this proposal\n- Only one candidate that receives the highest number of CRE for ‘Yes’ voting, can only proceed to the next step\n- The final validator needs to be agreed upon via on-chain governance(existing LSV need to vote)\n- New LSV is added upon the passing of the governance proposal\n\nLink to the docs for all candidates scoring:\n\nhttps://docs.google.com/spreadsheets/d/1iG5QVLldbaVVWRLVvddoQaNLiLJXbs04/edit?usp=sharing\u0026ouid=115407576662815838896\u0026rtpof=true\u0026sd=true\n\nHere’s the scoring system that was discussed before:https://commonwealth.im/crescent-forum/discussion/6614-amended-scoring-system-for-adding-new-lsv\n\n**Qualitative Scoring Criteria submitted by Citadel.one**\n\nHow will you contribute to the Crescent Ecosystem in the future?\n\n: We constantly provide maintenance to the integration of CRE to the web version. We added CRE to Citadel.one mobile wallet - learn more via the link (https://apps.apple.com/us/app/citadel-one/id1546701475?ign-mpt=uo%3D2 OR https://play.google.com/store/apps/details?id=one.citadel.mobile\u0026gl=NL) + We added CRE into Citadel.one Autorestaking Application (https://medium.com/citadel-one/autorestake-app-overview-ebefaecb38d2). In future, we can integrate the main product of Crescent inside Citadel.one app store and add CRE to our governance extension.\n\nWhat is your long-term plan to sustain the Crescent node?\n\n: We use Grafana for monitoring of our nodes' CPU load, uptime, current and missed blocks and random-access memory usage. ELK Stack software for building analytics, errors search, failure mode and effects analysis. Zabbix for hardware, hard disk and memory load monitoring. And Telegram bot that sends notifications if something out of order occurs. As for the marketing perspective, we are always in touch with the community so the support is always provided. Additionally, for staking with our node, users receive additional bonuses in XCT.\n\nInfra specs and operation specs\n\n:Mixed cloud (AWS) and bare-metal (OVHcloud) infrastructure. Running validator, backup/RPC nodes. Specs varies between networks - from 4 CPU 16 RAM to 16 CPU 64 RAM depending on the network workload. Running NVMe disks on all of the machines"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "3461797792218",
+        "abstain": "15182400412695",
+        "no": "13935675229",
+        "no_with_veto": "277358234"
+      },
+      "submit_time": "2022-09-14T09:46:43.103217351Z",
+      "deposit_end_time": "2022-09-19T09:46:43.103217351Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-09-14T09:46:43.103217351Z",
+      "voting_end_time": "2022-09-19T09:46:43.103217351Z"
+    },
+    {
+      "proposal_id": "19",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Approve Stakely.io as Crescent Liquid Staking Validator",
+        "description": "According to the last announcement for adding a new Liquid Staking Validator, we got an LSV application form for 2 weeks and a feedback period for 1 week. Based on the scoring system that we opened and discussed on the commonwealth, we extracted the top 3 candidates out of 20 candidates.\n\nVoting YES to this proposal means that you approve ‘[Stakely.io](http://stakely.io/)’ to be adopted as a new liquid staking validator.\n\nOnly YES votes will be counted. Voting NO, NO WITH VETO, or ABSTAIN will have no effect on which candidate is adopted. (However, when the number of the voting amount is significantly different among each candidate, No votes can be reflected)\n\nVoting procedures summary:\n\n- Existing LSV should not vote, and votes by existing LSV will not be counted for this proposal\n- Only one candidate that receives the highest number of CRE for ‘Yes’ voting, can only proceed to the next step\n- The final validator needs to be agreed upon via on-chain governance(existing LSV need to vote)\n- New LSV is added upon the passing of the governance proposal\n\nLink to the docs for all candidates scoring:\n\nhttps://docs.google.com/spreadsheets/d/1iG5QVLldbaVVWRLVvddoQaNLiLJXbs04/edit?usp=sharing\u0026ouid=115407576662815838896\u0026rtpof=true\u0026sd=true\n\nHere’s the scoring system that was discussed before:https://commonwealth.im/crescent-forum/discussion/6614-amended-scoring-system-for-adding-new-lsv\n\n**Qualitative Scoring Criteria submitted by** [Stakely.io](http://stakely.io/)\n\nHow will you contribute to the Crescent Ecosystem in the future?\n\n: We will promote Crescent in our Spanish communities and will support it through our social media, besides publishing staking guides, video tutorials, SEO-optimized posts, and other educational content in different languages to help our community to understand what Crescent is and how to stake. We always vote on all governance proposals and we make all of our community aware by communicating our decisions via Twitter. We also have an RPC/LCD endpoint load balancer service. It aggregates several public and private nodes and the requests are routed among them. This service has many features like health checks, retires on errors and 10s timeouts, CORS-enabled requests, caching, etc. We could integrate Crescent into it if the team thinks it would be helpful. Another service we provide is a multi-coin mainnet faucet, where we currently have Crescent integrated (https://stakely.io/en/faucet/crescent). This service distributes a small amount of mainnet tokens to the users that have run out of gas. It can help bring more people to the project and improve the network's user experience. We will continue maintaining this service and refilling the faucet with our own funds. As an additional contribution, we are planning to build Docker images for most of the Cosmos-based chains, including Crescent.\n\nWhat is your long-term plan to sustain the Crescent node?\n\n: We estimate that the rewards obtained from delegations will be enough to pay for the maintenance of the validator. There are other income sources that we can study, like offering archive RPCs and white-label validators. In case running the validator is not profitable in the future, we have enough income from other networks to continue maintaining it.\n\nInfra specs and operation specs\n\n:Our Crescent validator runs in a bare metal server in Tokyo with the following specifications: CPU: Intel Xeon E-2286G - 6c/12t - 4 GHz/4.9 GHz Memory: 32GB Storage: 2 x 1TB SSD Raid 1 Bandwidth: 1000 Mbps We also have a full-node running for redundancy that we will use in case of any issues. It has the state-sync feature enabled which will help in case we needed to launch a new server. We have previously used tools like TMKMS but we decided to stop using them due to latency. We have also heard about Horcrux in the last months, and we are discussing using it in our setup. We use Prometheus, Zabbix, Grafana, and custom bash-scripts for our monitoring system. Prometheus sends us data from the system and node to Zabbix, where we manage the notifications and alerts for system metrics Grafana is used for visual metrics of server and node historical data Custom bash scripts for alerts like node not-in-sync, low number of peers, high system usage, missed blocks, etc. that notifies us in our private Discord server.\n\nDetails for this section can be found at the following IPFS link below.\n\nhttps://ipfs.io/ipfs/QmPxaSYSvTKdo12ZmJ2EubEhrvyTWVp78ahjiN9A9fvGqe"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "2850175812499",
+        "abstain": "15613484508112",
+        "no": "104460350674",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2022-09-14T09:52:13.813053776Z",
+      "deposit_end_time": "2022-09-19T09:52:13.813053776Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-09-14T09:52:13.813053776Z",
+      "voting_end_time": "2022-09-19T09:52:13.813053776Z"
+    },
+    {
+      "proposal_id": "20",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Approve Smart Stake as Crescent Liquid Staking Validator",
+        "description": "According to the last announcement for adding a new Liquid Staking Validator, we got an LSV application form for 2 weeks and a feedback period for 1 week. Based on the scoring system that we opened and discussed on the commonwealth, we extracted the top 3 candidates out of 20 candidates.\n\nVoting YES to this proposal means that you approve ‘Smart Stake’ to be adopted as a new liquid staking validator.\n\nOnly YES votes will be counted. Voting NO, NO WITH VETO, or ABSTAIN will have no effect on which candidate is adopted. (However, when the number of the voting amount is significantly different among each candidate, No votes can be reflected)\n\nVoting procedures summary:\n\n- Existing LSV should not vote, and votes by existing LSV will not be counted for this proposal\n- Only one candidate that receives the highest number of CRE for ‘Yes’ voting, can only proceed to the next step\n- The final validator needs to be agreed upon via on-chain governance(existing LSV need to vote)\n- New LSV is added upon the passing of the governance proposal\n\nLink to the docs for all candidates scoring:\n\nhttps://docs.google.com/spreadsheets/d/1iG5QVLldbaVVWRLVvddoQaNLiLJXbs04/edit?usp=sharing\u0026ouid=115407576662815838896\u0026rtpof=true\u0026sd=true\n\nHere’s the scoring system that was discussed before: https://commonwealth.im/crescent-forum/discussion/6614-amended-scoring-system-for-adding-new-lsv\n\n**Qualitative Scoring Criteria submitted by Smart Stake**\n\nHow will you contribute to the Crescent Ecosystem in the future?\n\n: Smart Stake has built a basic analytics dashboard for Crescent at crescent.smartstake.io and also provided support for Crescent in its decentralization metrics comparison dashboard at [decentralization.smartstake.io](http://decentralization.smartstake.io/) / [d14n.smartstake.io](http://d14n.smartstake.io/). The current dashboard has validator performance history, calculator, network statistics, governance participation /proposals. We have plans to build 10+ more features in the current dashboard. As the community evolves and it has more specific needs, we will build more tools. Smart Stake's custom analytics provide answers to common questions of the community and is looking forward to help improve the engagement level in Crescent.\n\nWhat is your long-term plan to sustain the Crescent node?\n\n: Smart Stake has only one source of revenue (commission from staking rewards). It will continue to support the Crescent validator from its commission from other networks and looks forward to inclusion in LSV for covering Crescent nodes expenses eventually.\n\nInfra specs and operation specs\n\n: Smart Stake hardens every server node with a standard setup where root access is removed, ssh keys are used for authentication, firewalls are installed, failban is used to limit unwanted access attempts. All validator nodes have a corresponding hot backup of all validators. For networks requiring high throughput, we do not use sentry node architecture unless needed for a particular project or where the threat vectors are higher. We use custom scripting to watch for server metrics, node performance, node sync status, signs missed, oracle performance. Pagerduty workflows are also in place to place calls/sms/push notifications whenever anomalies are detected. The scripting has several failsafe mechanisms built in to ensure if the scripting fails, that itself generates alerts."
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "3510606046342",
+        "abstain": "15264982377047",
+        "no": "31054152133",
+        "no_with_veto": "14937012"
+      },
+      "submit_time": "2022-09-14T09:57:59.003889228Z",
+      "deposit_end_time": "2022-09-19T09:57:59.003889228Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-09-14T09:57:59.003889228Z",
+      "voting_end_time": "2022-09-19T09:57:59.003889228Z"
+    },
+    {
+      "proposal_id": "21",
+      "content": {
+        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+        "title": "Confirm Smart Stake as Crescent Liquid Staking Validator",
+        "description": "This is the final proposal for adding the new LSV, Smart Stake. As we made an announcement to the community, top3 validators went through each approval proposal. As a result, Smart Stake ********got the highest number of ‘yes’ voting, 3,510,606. Therefore, We’d like to make a confirmation proposal for Smart Stake as a new liquid staking validator at Crescent.\n\nVoting YES to this proposal means that you confirm Smart Stake to be adopted as Crescent new LSV.\n\nAs soon as this proposal pass, Smart Stake will be added to Crescent LSV group automatically. For the confirmation proposal, existing LSVs need to participate in voting.",
+        "changes": [
+          {
+            "subspace": "liquidstaking",
+            "key": "WhitelistedValidators",
+            "value": "[\n                {\n                    \"validator_address\": \"crevaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4ep74jz\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper17muws0zgrd0vzh37guea7960ym7aqf2j9v6l7s\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1ls9w867xu0q5zjze5vrakfa2zluahtv44gwn7y\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper10rdgqczxyp69x9llq62cc3xs4w8w0k7p42x9jq\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1dad8evf6vw72seljuzhjgurq48egaqfndvq38v\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1zuucyy5v49lwnrdupqqafqdu29qy6wgnadwkuu\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper14lultfckehtszvzw4ehu0apvsr77afvy35naks\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1qvdyzetkqq6rt4xu234xpvee5wt45a75rt2afe\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper18zvtvhzrqq5ny2jpmlc6new9k4c4uzzh6tcfpt\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1pxexdsms050v35zu0vc07dk4ml647lsrjff52g\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper130mdu9a0etmeuw52qfxk73pn0ga6gawk9cyq6a\",\n                    \"target_weight\": \"10\"\n                },\n                {\n                    \"validator_address\": \"crevaloper1hu64xnmav0m680n87pe5hw6yr2v92tw9pshrqf\",\n                    \"target_weight\": \"10\"    \n                },\n                {\n                    \"validator_address\": \"crevaloper14asv5wwupex5gz6sxtga487r6tf3vdnkl689mu\",\n                    \"target_weight\": \"10\"    \n                }\t\t\t\n            ]"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "18438905689550",
+        "abstain": "156334418539",
+        "no": "34980924",
+        "no_with_veto": "90406678"
+      },
+      "submit_time": "2022-09-23T06:20:02.483131595Z",
+      "deposit_end_time": "2022-09-28T06:20:02.483131595Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-09-23T06:20:02.483131595Z",
+      "voting_end_time": "2022-09-28T06:20:02.483131595Z"
+    },
+    {
+      "proposal_id": "22",
+      "content": {
+        "@type": "/crescent.farming.v1beta1.PublicPlanProposal",
+        "title": "Reallocation of LP farming plan - Discontinue pools out of range and include IST",
+        "description": "This governance proposal is to initiate reallocation of the current farming plan to accommodate newly created pools and discontinue rewarding of irrelevant pools.\n\nIn alignment with initial design and purpose, the nature of ranged pools on Crescent DEX are optimized for maintaining and servicing a stable pool. With the launch of Inter Protocol’s IST, it naturally corresponds to the formation of an IST pool, allowing users to easily be onboarded to the innovations that will be provided by Inter and Agoric through the newest native stable token on the Cosmos Ecosystem.\n\nInter Protocol listing discussion on Commonwealth: https://commonwealth.im/crescent-forum/discussion/7511-inter-protocol-ist\n\nThe farming weights are always up for discussion, and will be adjusted to include newly launched tokens that have potential for synergy with Crescent DEX in the future according to governance and user demand.\n\nThe Crescent Foundation proposes the following farming weights below in consideration of newly listed assets, and capital-efficiency of ranged pools:\n\n- **Newly Incentivized Farming Pools**\n    - bCRE / CRE Ranged Pool (1.15~1.25): 5%\n        - New range formation\n    - IST / USDC.axl (0.99~1.01): 1%\n    - IST / USDC.grv (0.99~1.01): 1%\n- **Farming Weight Adjustment**\n- Reserve(Module Account): 17% \u003e 23%\n    - To be utilized in the incentivization of newly listed tokens\n- **Discontinuation of Farming Rewards**\n    - bCRE / CRE Ranged Pool (1.1~1.12): 5% \u003e 0%\n    - bCRE / CRE Ranged Pool (1.063~1.15): 5% \u003e 0%\n        - Replaced with new price range\n    - BLD / bCRE Ranged Pool (1.0~7.0): 0%\n        - Initial liquidity driving period of 28 days has passed\n- **Unchanged Farming Weights**\n    - bCRE / CRE (Basic Pool): 10%\n    - ATOM / USDC.axl: 10%\n    - ATOM / USDC.grv: 10%\n    - USDC.axl / USDC.grv Ranged Pool (0.99~1.01): 2%\n    - ATOM/bCRE (Basic Pool): 20%\n    - ATOM / bCRE Ranged Pool (20~100): 15%\n    - BLD / bCRE Ranged Pool (1.0~7.0): 0%\n    - GRAV / bCRE Ranged Pool (0.03~0.20): 3%",
+        "add_plan_requests": [
+        ],
+        "modify_plan_requests": [
+          {
+            "plan_id": "1",
+            "name": "",
+            "farming_pool_address": "",
+            "termination_address": "",
+            "staking_coin_weights": [
+              {
+                "denom": "pool1",
+                "amount": "0.129870129870130000"
+              },
+              {
+                "denom": "pool18",
+                "amount": "0.129870129870130000"
+              },
+              {
+                "denom": "pool19",
+                "amount": "0.129870129870130000"
+              },
+              {
+                "denom": "pool21",
+                "amount": "0.025974025974026000"
+              },
+              {
+                "denom": "pool25",
+                "amount": "0.038961038961039000"
+              },
+              {
+                "denom": "pool26",
+                "amount": "0.194805194805195000"
+              },
+              {
+                "denom": "pool3",
+                "amount": "0.259740259740260000"
+              },
+              {
+                "denom": "pool30",
+                "amount": "0.064935064935064000"
+              },
+              {
+                "denom": "pool31",
+                "amount": "0.012987012987013000"
+              },
+              {
+                "denom": "pool32",
+                "amount": "0.012987012987013000"
+              }
+            ],
+            "start_time": null,
+            "end_time": null,
+            "epoch_amount": [
+              {
+                "denom": "ucre",
+                "amount": "72149000000"
+              }
+            ],
+            "epoch_ratio": "0.000000000000000000"
+          }
+        ],
+        "delete_plan_requests": [
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "19447023249958",
+        "abstain": "6227210696",
+        "no": "1231096138",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2022-11-11T08:05:19.226530223Z",
+      "deposit_end_time": "2022-11-16T08:05:19.226530223Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-11-11T08:05:19.226530223Z",
+      "voting_end_time": "2022-11-16T08:05:19.226530223Z"
+    },
+    {
+      "proposal_id": "23",
+      "content": {
+        "@type": "/crescent.farming.v1beta1.PublicPlanProposal",
+        "title": "Reallocation of LP farming plan - Incentivize INJ / bCRE pool",
+        "description": "This governance proposal is to initiate reallocation of the current farming plan to accommodate a newly created pool.\n\nAs discussed through the Crescent Forum, both Crescent and Injective see synergy in merging of communities and allowing the onboarding of native tokens on each respective DEX. Through the listing of Injective’s $INJ, Crescent can expect the merge of communities and user flow from the Injective protocol.\n\nThe farming weights are always up for discussion, and will be adjusted to include newly launched tokens that have potential for synergy with Crescent DEX in the future according to governance and user demand.\n\nINJ listing forum discussion: https://commonwealth.im/crescent-forum/discussion/7669-injective-protocol-inj\n\nThe Crescent Foundation proposes the following farming weights below in consideration of newly listed assets, and capital-efficiency of ranged pools:\n\n- **Newly Incentivized Farming Pools**\n    - INJ / bCRE Ranged Pool (5.0~60.0) : 6%\n- **Farming Weight Adjustment**\n- Reserve(Module Account): 23% \u003e 17%\n    - To be utilized in the incentivization of newly listed tokens\n- **Unchanged Farming Weights**\n    - ATOM / USDC.axl: 10%\n    - ATOM / USDC.grv: 10%\n    - USDC.axl / USDC.grv Ranged Pool (0.99~1.01): 2%\n    - ATOM/bCRE (Basic Pool): 20%\n    - ATOM / bCRE Ranged Pool (20~100): 15%\n    - GRAV / bCRE Ranged Pool (0.03~0.20): 3%\n    - bCRE / CRE (Basic Pool): 10%\n    - bCRE / CRE Ranged Pool (1.15~1.25): 5%\n    - IST / USDC.axl (0.99~1.01): 1%\n    - IST / USDC.grv (0.99~1.01): 1%",
+        "add_plan_requests": [
+        ],
+        "modify_plan_requests": [
+          {
+            "plan_id": "1",
+            "name": "",
+            "farming_pool_address": "",
+            "termination_address": "",
+            "staking_coin_weights": [
+              {
+                "denom": "pool1",
+                "amount": "0.120481927710800000"
+              },
+              {
+                "denom": "pool18",
+                "amount": "0.120481927710800000"
+              },
+              {
+                "denom": "pool19",
+                "amount": "0.120481927710800000"
+              },
+              {
+                "denom": "pool21",
+                "amount": "0.024096385542200000"
+              },
+              {
+                "denom": "pool25",
+                "amount": "0.036144578313300000"
+              },
+              {
+                "denom": "pool26",
+                "amount": "0.180722891566300000"
+              },
+              {
+                "denom": "pool3",
+                "amount": "0.240963855421700000"
+              },
+              {
+                "denom": "pool30",
+                "amount": "0.060240963855400000"
+              },
+              {
+                "denom": "pool31",
+                "amount": "0.012048192771100000"
+              },
+              {
+                "denom": "pool32",
+                "amount": "0.012048192771100000"
+              },
+              {
+                "denom": "pool34",
+                "amount": "0.072289156626500000"
+              }
+            ],
+            "start_time": null,
+            "end_time": null,
+            "epoch_amount": [
+              {
+                "denom": "ucre",
+                "amount": "77771000000"
+              }
+            ],
+            "epoch_ratio": "0.000000000000000000"
+          }
+        ],
+        "delete_plan_requests": [
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "27964689926203",
+        "abstain": "8929158402",
+        "no": "6898168240",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2022-11-18T09:04:18.316791095Z",
+      "deposit_end_time": "2022-11-23T09:04:18.316791095Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-11-18T09:04:18.316791095Z",
+      "voting_end_time": "2022-11-23T09:04:18.316791095Z"
+    },
+    {
+      "proposal_id": "24",
+      "content": {
+        "@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
+        "title": "Crescent V3 Bug Bounty - Crescent Rehearsal and Academy",
+        "description": "Crescent is a team that continues a commitment to providing innovative DeFi solutions and public infrastructure. In doing so, we understand that users may require time to familiarize themselves with the novelty and unique traits of DeFi utilities that Crescent Network provides for the Cosmos Ecosystem.\nIn July, we received various well-analyzed contributions through our first Bug Bounty, of which many were implemented into our mainnet, successfully serving its purpose of retaining security and improving user experience for features never before seen on Cosmos.\nWe aim to introduce the following utilities in our V3 upgrade on Crescent Network:\nLiquid Farming\nMarket Maker Incentives\nFarming Version 2.0\nMobile orderbook UI\nIn anticipation for the game-changing upgrades of Crescent V3, we would like to invite all users to test new functions prior to launch on the mainnet. As a team that focuses both on DeFi innovations and community engagement alike, we acknowledge the capabilities of our users.\nThe Crescent Foundation proposes the allocation of 300,000 CRE from the Community Fund to be utilized in a Bug Bounty on the Crescent testnet. This will make sure that those actively participating in the improvement of our network will be accurately rewarded.\nThe Crescent Rehearsal will commence on November 24, lasting until December 1, during which time users will be able to submit feedback and content of the following categories:\nBug Bounty:\nSubmitted via the Crescent Bug Reporting Form (To be provided at the beginning of testnet)\nCritical: 50000 CRE\n• Exploitation of liquidity, chain halting, stolen funds, token inflation bug\nMajor: 5000 CRE\nLiquid Farming, Market Maker Incentives, and Farming V2 specific core bug other than Critical bug, limited financial exploitation\nMinor: 200 CRE\nJudged case-by-case\nNote that MOST front-end bugs will be categorized as Minor unless deemed critical to the network\nThe rewarding will be based on first-report-first-reward basis, with repeated and already reported bugs being ineligible for rewarding.\nThe rewarding of each eligible case will be reviewed by the Foundation and presented to the community through governance upon completion of the Bug Bounty. Upon passing of the proposal, each eligible user will be rewarded their corresponding CRE for their contribution to development of secure utilities.\nIn the case of a bug being reported and scored among the eligible criteria(Criteria below), the user will be rewarded via the Foundation’s multi-sig wallet(cre1u9jxn6l7seq5jjej4w6etpdxufphwfuunljr4e), which will receive and distribute the bug bounty rewards, and the remaining funds will be returned to the Community Fund. \n\nCrescent Academy(Utility Education): \nIn order to promote a community culture of shared educational and entertainment content,we will start the implementation of the Crescent Academy. \nThe purpose of this school is to allow people involved in educational content creation to participate in the evolution of Crescent and the education of the newcomers. \nThe goal here is to make content easy to understand and available for everyone who joins our community. These contents can be: \nYoutube videos\nTwitter threads\nMedium articles\nEtc. \nThese contents should talk about the testnet and what V3 upgrade will introduce: \nLiquid Farming \nMarket Maker Incentives \nFarming Version 2.0 \nMobile orderbook UI \nthe goal is not to make a simple article, but especially to make complete contents, well explained such as: \nTutorial \nLiquid Farming explanation \nComparison between what we know and the new Crescent model \nAnd more. \nWe expect rich content with images, a clear editorial line and a fluid flow. \nThe reward of each eligible case will be reviewed by the Foundation and presented to the community on discord. \nYou will be limited to one piece of content per user, so take the time to choose it and polish it. You will have to submit your content using Crew3 and your review will be pending until the end of the bug bounty. \nEach eligible user will be rewarded their corresponding CRE for their contribution to development of the Crescent school.\nNote that the school will not only last during the bug bounty period, it will be part of Crescent structure.",
+        "recipient": "cre1u9jxn6l7seq5jjej4w6etpdxufphwfuunljr4e",
+        "amount": [
+          {
+            "denom": "ucre",
+            "amount": "300000000000"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "25947125766874",
+        "abstain": "622661152",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2022-11-18T09:50:16.993280705Z",
+      "deposit_end_time": "2022-11-23T09:50:16.993280705Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-11-18T09:50:16.993280705Z",
+      "voting_end_time": "2022-11-23T09:50:16.993280705Z"
+    },
+    {
+      "proposal_id": "25",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Approve Stakin as Crescent Liquid Staking Validator",
+        "description": "According to the last announcement for adding a new Liquid Staking Validator, we got an LSV application form for 2 weeks and a feedback period for 1 week. Based on the scoring system that we opened and discussed on the commonwealth, we extracted the top 3 candidates out of 16 candidates.  \n\nIn order to align with the principles of blockchain and Cosmos alike, decentralization should be at the heart of Crescent. Therefore, we would like to onboard two validator teams for this round of voting, upon which the two teams with the highest votes will be included in the current LSV, in an effort to further pursue decentralization\n\nFor this round, top 2 validators will be added to the LSV governance voting.\n\nVoting YES to this proposal means that you approve ‘Stakin’ to be adopted as a new liquid staking validator.\n\nOnly YES votes will be counted. Voting NO, NO WITH VETO, or ABSTAIN will have no effect on which candidate is adopted. (However, when the number of the voting amount is significantly different among each candidate, No votes can be reflected)\n\nVoting procedures summary:\n\n- Existing LSV should not vote, and votes by existing LSV will not be counted for this proposal\n- Top 2 candidates that receives the highest number of CRE for ‘Yes’ voting, can only proceed to the next step\n- The final validator needs to be agreed upon via on-chain governance(existing LSV need to vote)\n- New LSV is added upon the passing of the governance proposal\n\nLink to the docs for all candidates scoring:\n\nhttps://docs.google.com/spreadsheets/d/1C4A0RluUqxR0Qg_n7wd9jrrVFFehVw5l/edit?usp=sharing\u0026ouid=115407576662815838896\u0026rtpof=true\u0026sd=true\n\nHere’s the scoring system that was discussed before:https://commonwealth.im/crescent-forum/discussion/6614-amended-scoring-system-for-adding-new-lsv\n\n**Qualitative Scoring Criteria submitted by Stakin**\n\nHow will you contribute to the Crescent Ecosystem in the future?\n\n: In addition to running secure and reliable staking infrastructure for Crescent, Stakin plans to contribute to the Crescent ecosystem on many fronts:\nEmergency situations: In the past, we have been available for most technical emergency situations. Blockchains are experimental technologies, and we understand that it is in bad times that proactive validators are the most needed. With 24/7 on-call rotation and monitoring, we will be available for emergency situations at the validator level but also for network-related emergencies.\nGovernance: vote on all key proposals and join the decentralized governance debate, inviting the community and delegators to contribute as well. Every week we share a weekly governance recap on our different social media platforms (Twitter, Discord), but also discuss proposals. So far we have voted on 100% of Crescent proposals.\nCommunity: we have a dedicated community manager working with the Cosmos ecosystem and Cosmos networks. We will assist the Crescent community with liquid staking, staking requests and join discussions in general.\nMarketing: we regularly publish content on our blog (https://blog.stakin.com/) and Medium (https://medium.com/stakin) which attract ~30,000 monthly readers. We believe that education is an important aspect of the growth of DeFi and DeFi products. As such, we will write and share content about Crescent with our community.\nOther services: we can operate other services such as Seeds, public RPCs, Snapshots, etc. if needed depending on the requirements of Crescent and the community.\n\nWhat is your long-term plan to sustain the Crescent node?\n\n: We will charge a 20% commission on staking rewards like the other validators that are part of the program.\n\nInfra specs and operation specs\n\n: We are currently running our validator in Tokyo with a sentry node architecture, leveraging multiple cloud providers (GCP, Vultr) for diversity and redundancy. As we are using the cloud, we can increase the specs easily if needed. Currently, we are running with 8 CPUs, 32 GB RAM, and 1TB SSD.\n\nSentry nodes are connected to the validator in private mode using a VPN tunnel for latency and security. Sentries are open to the public network and keep in sync with the network while providing DDOS protection. For further protection, only required ports are open for both sentries and validators.\n\nThe company has a strict role management policy for access to production infrastructure including servers operating sentry nodes and validators.\n\nThe developers operate via ZTNA, with strict rules for SSH login and IP whitelists. All accesses are logged and monitored. Infrastructure secrets are encrypted and stored in secure HashiCorp vaults. Credentials, passwords and tokens are generated, stored and rotated from the vault.\n\nDetails for this section can be found at the following IPFS link below:\n\nhttps://ipfs.io/ipfs/QmeBfywbWsTmsU5AkKpaKPmPNSPZP5QVZELjnMRCBFhBQu"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "9058942935741",
+        "abstain": "17731626308322",
+        "no": "109407067208",
+        "no_with_veto": "15568341759"
+      },
+      "submit_time": "2022-12-02T09:25:46.775791337Z",
+      "deposit_end_time": "2022-12-07T09:25:46.775791337Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-12-02T09:25:46.775791337Z",
+      "voting_end_time": "2022-12-07T09:25:46.775791337Z"
+    },
+    {
+      "proposal_id": "26",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Approve StakeLab as Crescent Liquid Staking Validator",
+        "description": "According to the last announcement for adding a new Liquid Staking Validator, we got an LSV application form for 2 weeks and a feedback period for 1 week. Based on the scoring system that we opened and discussed on the commonwealth, we extracted the top 3 candidates out of 16 candidates. \n\nIn order to align with the principles of blockchain and Cosmos alike, decentralization should be at the heart of Crescent. Therefore, we would like to onboard two validator teams for this round of voting, upon which the two teams with the highest votes will be included in the current LSV, in an effort to further pursue decentralization\n\nFor this round, top 2 validators will be added to the LSV governance voting.\n\nVoting YES to this proposal means that you approve ‘StakeLab’ to be adopted as a new liquid staking validator.\n\nOnly YES votes will be counted. Voting NO, NO WITH VETO, or ABSTAIN will have no effect on which candidate is adopted. (However, when the number of the voting amount is significantly different among each candidate, No votes can be reflected)\n\nVoting procedures summary:\n\n- Existing LSV should not vote, and votes by existing LSV will not be counted for this proposal\n- Top 2 candidates that receives the highest number of CRE for ‘Yes’ voting, can only proceed to the next step\n- The final validator needs to be agreed upon via on-chain governance(existing LSV need to vote)\n- New LSV is added upon the passing of the governance proposal\n\nLink to the docs for all candidates scoring:\n\nhttps://docs.google.com/spreadsheets/d/1C4A0RluUqxR0Qg_n7wd9jrrVFFehVw5l/edit?usp=sharing\u0026ouid=115407576662815838896\u0026rtpof=true\u0026sd=true\n\nHere’s the scoring system that was discussed before:https://commonwealth.im/crescent-forum/discussion/6614-amended-scoring-system-for-adding-new-lsv\n\n**Qualitative Scoring Criteria submitted by StakeLab**\n\nHow will you contribute to the Crescent Ecosystem in the future?\n\n: Still providing updates in our french community runned here: https://t.me/CosmosFrance\n\nWallet/Explorer/Governance and dashboard before eoy\n\nWhat is your long-term plan to sustain the Crescent node?\n\n: Our general business maintain it + our fund if we were at loss\n\nInfra specs and operation specs\n\n: Same as before, 3 providers + physical backup"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "9326304561029",
+        "abstain": "15450872357685",
+        "no": "4564283505",
+        "no_with_veto": "20900990499"
+      },
+      "submit_time": "2022-12-02T09:44:02.877751307Z",
+      "deposit_end_time": "2022-12-07T09:44:02.877751307Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-12-02T09:44:02.877751307Z",
+      "voting_end_time": "2022-12-07T09:44:02.877751307Z"
+    },
+    {
+      "proposal_id": "27",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Approve polkachu.com as Crescent Liquid Staking Validator",
+        "description": "According to the last announcement for adding a new Liquid Staking Validator, we got an LSV application form for 2 weeks and a feedback period for 1 week. Based on the scoring system that we opened and discussed on the commonwealth, we extracted the top 3 candidates out of 16 candidates. \n\nIn order to align with the principles of blockchain and Cosmos alike, decentralization should be at the heart of Crescent. Therefore, we would like to onboard two validator teams for this round of voting, upon which the two teams with the highest votes will be included in the current LSV, in an effort to further pursue decentralization\n\nFor this round, top 2 validators will be added to the LSV governance voting.\n\nVoting YES to this proposal means that you approve ‘[polkachu.com](http://polkachu.com/)’ to be adopted as a new liquid staking validator.\n\nOnly YES votes will be counted. Voting NO, NO WITH VETO, or ABSTAIN will have no effect on which candidate is adopted. (However, when the number of the voting amount is significantly different among each candidate, No votes can be reflected)\n\nVoting procedures summary:\n\n- Existing LSV should not vote, and votes by existing LSV will not be counted for this proposal\n- Top 2 candidates that receives the highest number of CRE for ‘Yes’ voting, can only proceed to the next step\n- The final validator needs to be agreed upon via on-chain governance(existing LSV need to vote)\n- New LSV is added upon the passing of the governance proposal\n\nLink to the docs for all candidates scoring:\n\nhttps://docs.google.com/spreadsheets/d/1C4A0RluUqxR0Qg_n7wd9jrrVFFehVw5l/edit?usp=sharing\u0026ouid=115407576662815838896\u0026rtpof=true\u0026sd=true \n\nHere’s the scoring system that was discussed before:\n\nhttps://commonwealth.im/crescent-forum/discussion/6614-amended-scoring-system-for-adding-new-lsv \n\n**Qualitative Scoring Criteria submitted by** [polkachu.com](http://polkachu.com/)\n\nHow will you contribute to the Crescent Ecosystem in the future?\n\n: We will continue to run the validation service and expand the IBC channels for Crescent. Will continue to contribute to the open-source projects.\n\nWhat is your long-term plan to sustain the Crescent node?\n\n: We have been sustaining the Crescent node in the active set in the past 6 months flawlessly. We will continue the same top-notch work that we have been doing.\n\nInfra specs and operation specs\n\n:See the writeup on our architecture, security policy, monitoring system, etc. https://polkachu.com/blogs/holy-trinity-a-system-approach-to-tendermint-based-chain-validation"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "9035632157909",
+        "abstain": "15828469346171",
+        "no": "18410666751",
+        "no_with_veto": "13378598456"
+      },
+      "submit_time": "2022-12-02T09:55:27.742656297Z",
+      "deposit_end_time": "2022-12-07T09:55:27.742656297Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-12-02T09:55:27.742656297Z",
+      "voting_end_time": "2022-12-07T09:55:27.742656297Z"
+    },
+    {
+      "proposal_id": "28",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Increase Active Validator Set from 50 to 65",
+        "description": "This will make it possible for new validators to join and further decentralize the network  Increase MaxValidators=50 to MaxValidators=65. \nVote Yes means that you are in favor of increasing the number of active validators\nVote No means that you are against changing the number"
+      },
+      "status": "PROPOSAL_STATUS_REJECTED",
+      "final_tally_result": {
+        "yes": "2812890715680",
+        "abstain": "10884530466763",
+        "no": "6828461647096",
+        "no_with_veto": "57807371479"
+      },
+      "submit_time": "2022-12-05T12:18:24.996092431Z",
+      "deposit_end_time": "2022-12-10T12:18:24.996092431Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "501000000"
+        }
+      ],
+      "voting_start_time": "2022-12-05T12:21:59.537384300Z",
+      "voting_end_time": "2022-12-10T12:21:59.537384300Z"
+    },
+    {
+      "proposal_id": "29",
+      "content": {
+        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+        "title": "Core Upgrade v3",
+        "description": "Governance Proposal #29: LPFarm, LiquidFarming, and Market Maker Core Upgrade\\n\\nThis on-chain governance proposal is to adopt Crescent v3 which includes on-chain upgrades and changes. By voting YES to this proposal, you approve of adopting Crescent v3 including the following changes below:\\n\\n- Add marketmaker module [#55](https://github.com/crescent-network/crescent/pull/55)\\n- Add market making order type in\\xa0[#57](https://github.com/crescent-network/crescent/pull/57)\\n- Add liquidfarming module in\\xa0[#72](https://github.com/crescent-network/crescent/pull/72)\\n- Add x/lpfarm module in\\xa0[#70](https://github.com/crescent-network/crescent/pull/70) and\\xa0[#89](https://github.com/crescent-network/crescent/pull/89)\\n- Move MaxNumActivePoolsPerPair into params and set default value of 20 from 50\\xa0in\\xa0[#128](https://github.com/crescent-network/crescent/pull/128)\\n\\nThe upgrade will take place at height [3932000](https://www.mintscan.io/crescent/blocks/3932000), approximately UTC 2022-12-14 06:00:00.\\n\\nFor full instructions on performing the upgrade, see https://github.com/crescent-network/launch/blob/main/mainnet/crescent-1/upgrades/v3.md",
+        "plan": {
+          "name": "v3",
+          "time": "0001-01-01T00:00:00Z",
+          "height": "3932000",
+          "info": "Core Upgrade v3",
+          "upgraded_client_state": null
+        }
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "27243154062921",
+        "abstain": "331312516",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2022-12-09T02:13:56.357401058Z",
+      "deposit_end_time": "2022-12-14T02:13:56.357401058Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-12-09T02:13:56.357401058Z",
+      "voting_end_time": "2022-12-14T02:13:56.357401058Z"
+    },
+    {
+      "proposal_id": "30",
+      "content": {
+        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+        "title": "Confirm StakeLab and Stakin as Crescent Liquid Staking Validators",
+        "description": "This is the final proposal for adding Stakelab and Stakin as the new LSV. \n\nAs we made an announcement to the community, the top3 validators went through each approval proposal, and for this round, the top 2 validators will be added to the LSV governance voting in an effort to further pursue decentralization. As a result, Stakelab and Stakin got the highest number of ‘yes’ voting, 9,326,285 and 9,058,844, respectively. Therefore, We’d like to make a confirmation proposal for Stakelab and Stakin as new liquid staking validators at Crescent.\n\nVoting YES to this proposal means that you confirm Stakelab and Stakin to be adopted as Crescent new LSV. Voting No to this proposal means that you don’t confirm either Stakelab or Stakin to be Crescent's new LSV.\n\nAs soon as this proposal passes, Stakelab and Stakin will be added to Crescent LSV group automatically. For the confirmation proposal, existing LSVs need to participate in voting.",
+        "changes": [
+          {
+            "subspace": "liquidstaking",
+            "key": "WhitelistedValidators",
+            "value": "[\n        {\n          \"validator_address\": \"crevaloper1n3mhyp9fvcmuu8l0q8qvjy07x0rql8q4ep74jz\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper17muws0zgrd0vzh37guea7960ym7aqf2j9v6l7s\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper1ls9w867xu0q5zjze5vrakfa2zluahtv44gwn7y\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper10rdgqczxyp69x9llq62cc3xs4w8w0k7p42x9jq\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper1dad8evf6vw72seljuzhjgurq48egaqfndvq38v\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper1zuucyy5v49lwnrdupqqafqdu29qy6wgnadwkuu\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper14lultfckehtszvzw4ehu0apvsr77afvy35naks\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper1qvdyzetkqq6rt4xu234xpvee5wt45a75rt2afe\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper18zvtvhzrqq5ny2jpmlc6new9k4c4uzzh6tcfpt\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper1pxexdsms050v35zu0vc07dk4ml647lsrjff52g\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper130mdu9a0etmeuw52qfxk73pn0ga6gawk9cyq6a\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper1hu64xnmav0m680n87pe5hw6yr2v92tw9pshrqf\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper14asv5wwupex5gz6sxtga487r6tf3vdnkl689mu\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper19mt7qa5pralxre8j9v0wae2kvncv8qcghv0chf\",\n          \"target_weight\": \"10\"\n        },\n        {\n          \"validator_address\": \"crevaloper126nxgyruw03fyr3rmxg76squcy08pjtm9zkl5d\",\n          \"target_weight\": \"10\"\n        }\n      ]"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "27380373741493",
+        "abstain": "2228207425985",
+        "no": "879132097",
+        "no_with_veto": "33950436"
+      },
+      "submit_time": "2022-12-14T09:12:53.283342010Z",
+      "deposit_end_time": "2022-12-19T09:12:53.283342010Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-12-14T09:12:53.283342010Z",
+      "voting_end_time": "2022-12-19T09:12:53.283342010Z"
+    },
+    {
+      "proposal_id": "31",
+      "content": {
+        "@type": "/crescent.lpfarm.v1beta1.FarmingPlanProposal",
+        "title": "Migration to pair farming of Crescent v3",
+        "description": "In alignment with the Crescent v3 upgrade, this proposal is to migrate the current farming proposal of allocating farming weight to each pool, to each pair, better accomodating to the new system of the lpfarm module.\n\nDetails of change\n\n- pair1 bCRE/CRE pair 15%; from\n    - pool1 (basic pool) 10%\n    - pool30 (price range 1.15~1.25) 5%\n- pair3 ATOM/bCRE 35%; from\n    - pool3 (basic pool) 20%\n    - pool26 (price range 20~100) 15%\n- pair10 GRAV/bCRE 3%; from\n    - pool25 (price range 0.03~0.20) 3%\n- pari18 USDC.axl/USDC.grv 2%; from\n    - pool21 (price range 0.99~1.01) 2%\n- pair19 ATOM/USDC.axl 10%; from\n    - pool18 (basic pool) 10%\n- pair20 ATOM/USDC.grv 10%; from\n    - pool19 (basic pool) 10%\n- pair24 IST/USDC.grv 1%; from\n    - pool31 (price range 0.99~1.01) 1%\n- pair25 IST/USDC.axl 1%; from\n    - pool32 (price range 0.99~1.01) 1%\n- pair26 INJ/bCRE 6%; from\n    - pool34 (price range 5~60) 6%\n- Reserve (Module account) remains the same at 17%",
+        "create_plan_requests": [
+          {
+            "description": "2022.12.13-PublicLPFarmingPlans",
+            "farming_pool_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "reward_allocations": [
+              {
+                "denom": "",
+                "pair_id": "1",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "14055000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "3",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "32795000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "10",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "2811000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "18",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "1874000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "19",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "9370000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "20",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "9370000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "24",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "25",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "26",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "5622000000"
+                  }
+                ]
+              }
+            ],
+            "start_time": "2022-04-13T00:00:00Z",
+            "end_time": "2023-04-13T00:00:00Z"
+          }
+        ],
+        "terminate_plan_requests": [
+          {
+            "plan_id": "1"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "30150392644791",
+        "abstain": "10552660297",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2022-12-14T09:26:23.790963064Z",
+      "deposit_end_time": "2022-12-19T09:26:23.790963064Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-12-14T09:26:23.790963064Z",
+      "voting_end_time": "2022-12-19T09:26:23.790963064Z"
+    },
+    {
+      "proposal_id": "32",
+      "content": {
+        "@type": "/ibc.core.client.v1.ClientUpdateProposal",
+        "title": "Re-enable IBC Client to Terra Classic",
+        "description": "This proposal discussion is to re-enable IBC transfers between Crescent and Terra Classic. The IBC relayer has been halted since the unfortunate Terra Classic incident, but according to the recently passed governance proposal #10950 on Terra Classic, we believe that Crescent should also enable transfers between the two chains.",
+        "subject_client_id": "07-tendermint-0",
+        "substitute_client_id": "07-tendermint-30"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "30045799051031",
+        "abstain": "19246049538",
+        "no": "105194601219",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2022-12-14T09:38:41.290508488Z",
+      "deposit_end_time": "2022-12-19T09:38:41.290508488Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-12-14T09:38:41.290508488Z",
+      "voting_end_time": "2022-12-19T09:38:41.290508488Z"
+    },
+    {
+      "proposal_id": "33",
+      "content": {
+        "@type": "/crescent.lpfarm.v1beta1.FarmingPlanProposal",
+        "title": "Reallocation of LP farming plan - Incentivize CMST and CMDX pairs",
+        "description": "This governance proposal is to initiate reallocation of the current farming plan to accommodate newly created pairs and weight adjustments.\n\nCMST \u0026 CMDX listing forum discussion: https://commonwealth.im/crescent-forum/discussion/8558-comdex-cmdx-cmst\n\nThe Crescent Foundation proposes the following farming weights below::\n\n- **Newly Incentivized Farming Pools**\n    - CMDX / bCRE pair : 3% (2,811 CRE / day)\n    - bCRE / CMST pair : 1% (937 CRE / day)\n- **Farming Weight Adjustment**\n    - ATOM/USDC.axl pair : 10% \u003e 7%\n        - Gradual decrease in consideration of Market Maker Incentives on pair\n    - INJ/bCRE pair : 6% \u003e 4%\n        - In consideration of:\n        - Liquidity and trading demand\n        - Evaluation of system performance of $INJ\n        - Market making on Helix for CRE / USDT pair\n    - Reserve(Module Account): 17% \u003e 18%\n- **Unchanged Farming Weights**\n    - bCRE / CRE pair: 15%\n    - USDC.axl / USDC.grv pair: 2%\n    - IST / USDC.axl (0.99~1.01): 1%\n    - IST / USDC.grv (0.99~1.01): 1%\n    - ATOM / USDC.grv pair: 10%\n    - ATOM / bCRE pair: 35%\n    - GRAV / bCRE pair: 3%",
+        "create_plan_requests": [
+          {
+            "description": "2022.12.23-PublicLPFarmingPlans",
+            "farming_pool_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "reward_allocations": [
+              {
+                "denom": "",
+                "pair_id": "1",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "14055000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "3",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "32795000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "10",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "2811000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "18",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "1874000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "19",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "6559000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "20",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "9370000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "24",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "25",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "26",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "3748000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "27",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "29",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "2811000000"
+                  }
+                ]
+              }
+            ],
+            "start_time": "2022-04-13T00:00:00Z",
+            "end_time": "2023-04-13T00:00:00Z"
+          }
+        ],
+        "terminate_plan_requests": [
+          {
+            "plan_id": "9"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "26426418974778",
+        "abstain": "2143508876",
+        "no": "66098792611",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2022-12-23T07:45:04.265017675Z",
+      "deposit_end_time": "2022-12-28T07:45:04.265017675Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2022-12-23T07:45:04.265017675Z",
+      "voting_end_time": "2022-12-28T07:45:04.265017675Z"
+    },
+    {
+      "proposal_id": "34",
+      "content": {
+        "@type": "/crescent.lpfarm.v1beta1.FarmingPlanProposal",
+        "title": "Reallocation of LP farming plan - LUNA and LUNC pairs",
+        "description": "This governance proposal is to initiate reallocation of the current farming plan to accommodate newly created pairs and weight adjustments.\n\nLUNA listing forum discussion: https://commonwealth.im/crescent-forum/discussion/8595-terra-20-luna\n\nLUNC listing forum discussion: https://commonwealth.im/crescent-forum/discussion/8447-terra-classic-lunc\n\nThe Crescent Foundation proposes the following farming weights below::\n\n- **Newly Incentivized Farming Pools**\n    - LUNC/bCRE pair: 6%\n    - LUNA/bCRE pair: 6%\n- **Farming Weight Adjustment**\n    - Reserve(Module Account): 18% \u003e 6%\n- **Unchanged Farming Weights**\n    - INJ/bCRE pair : 4%\n    - bCRE / CRE pair: 15%\n    - USDC.axl / USDC.grv pair: 2%\n    - IST / USDC.axl (0.99~1.01): 1%\n    - IST / USDC.grv (0.99~1.01): 1%\n    - ATOM / USDC.grv pair: 10%\n    - ATOM/USDC.axl pair : 7%\n    - ATOM / bCRE pair: 35%\n    - GRAV / bCRE pair: 3%\n    - CMDX / bCRE pair : 3%\n    - bCRE / CMST pair : 1%",
+        "create_plan_requests": [
+          {
+            "description": "2023.01.04-PublicLPFarmingPlans",
+            "farming_pool_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "reward_allocations": [
+              {
+                "denom": "",
+                "pair_id": "1",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "14055000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "3",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "32795000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "4",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "5622000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "10",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "2811000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "18",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "1874000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "19",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "6559000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "20",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "9370000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "24",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "25",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "26",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "3748000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "27",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "29",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "2811000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "31",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "5622000000"
+                  }
+                ]
+              }
+            ],
+            "start_time": "2022-04-13T00:00:00Z",
+            "end_time": "2023-04-13T00:00:00Z"
+          }
+        ],
+        "terminate_plan_requests": [
+          {
+            "plan_id": "10"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "29448279405953",
+        "abstain": "1511911297565",
+        "no": "146301389903",
+        "no_with_veto": "8457512277"
+      },
+      "submit_time": "2023-01-04T07:00:11.302088549Z",
+      "deposit_end_time": "2023-01-09T07:00:11.302088549Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-04T07:00:11.302088549Z",
+      "voting_end_time": "2023-01-09T07:00:11.302088549Z"
+    },
+    {
+      "proposal_id": "35",
+      "content": {
+        "@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+        "title": "Core Upgrade v4",
+        "description": "Governance Proposal #35: Upgrade IBC Core Upgrade\\n\\nThis on-chain governance proposal is to adopt Crescent v4 which includes on-chain upgrades and changes. By voting YES to this proposal, you approve of adopting Crescent v4 including the following changes below:\\n\\n- Upgrade ibc-go from v2.2.0 to v3.4.0\\n\\nThe upgrade will take place at height [4415902](https://www.mintscan.io/crescent/blocks/4415902), approximately UTC 2023-01-11 06:00:00.\\n\\nFor full instructions on performing the upgrade, see https://github.com/crescent-network/launch/blob/main/mainnet/crescent-1/upgrades/v4.md",
+        "plan": {
+          "name": "v4",
+          "time": "0001-01-01T00:00:00Z",
+          "height": "4415902",
+          "info": "Core Upgrade v4",
+          "upgraded_client_state": null
+        }
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "28954215225984",
+        "abstain": "2294131210",
+        "no": "227291641",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-06T02:32:34.910123860Z",
+      "deposit_end_time": "2023-01-11T02:32:34.910123860Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-06T02:32:34.910123860Z",
+      "voting_end_time": "2023-01-11T02:32:34.910123860Z"
+    },
+    {
+      "proposal_id": "36",
+      "content": {
+        "@type": "/crescent.lpfarm.v1beta1.FarmingPlanProposal",
+        "title": "Reallocation of LP farming plan - Incentivize CMST/IST/BLD pairs",
+        "description": "This governance proposal is to initiate reallocation of the current farming plan to accommodate newly incentivized pairs and weight adjustments.\n\nbCRE/IST pair incentivization forum discussion: https://commonwealth.im/crescent-forum/discussion/8884-incentivization-bcreist-pair\n\nCMST/USDC.axl pair incentivization forum discussion: https://commonwealth.im/crescent-forum/discussion/8885-incentivization-cmstusdc\n\nBLD/bCRE pair incentivization forum discussion: https://commonwealth.im/crescent-forum/discussion/8883-incentivization-bldbcre-pair\n\nThe Crescent Foundation proposes the following farming weights below::\n\n- **Newly Incentivized Farming Pools**\n    - bCRE / IST pair: 1%\n    - CMST / USDC.axl pair: 1%\n    - BLD / bCRE pair: 6%\n- **Farming Weight Adjustment**\n    - Reserve(Module Account): 6% \u003e 1%\n    - ATOM/USDC.axl pair : 4%\n- **Unchanged Farming Weights**\n    - INJ / bCRE pair : 4%\n    - bCRE / CRE pair: 15%\n    - USDC.axl / USDC.grv pair: 2%\n    - IST / USDC.axl (0.99~1.01): 1%\n    - IST / USDC.grv (0.99~1.01): 1%\n    - ATOM / USDC.grv pair: 10%\n    - ATOM / bCRE pair: 35%\n    - GRAV / bCRE pair: 3%\n    - CMDX / bCRE pair : 3%\n    - bCRE / CMST pair : 1%\n    - LUNC/bCRE pair: 6%\n    - LUNA/bCRE pair: 6%",
+        "create_plan_requests": [
+          {
+            "description": "2023.01.12-PublicLPFarmingPlans",
+            "farming_pool_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "reward_allocations": [
+              {
+                "denom": "",
+                "pair_id": "1",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "14055000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "3",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "32795000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "4",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "5622000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "10",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "2811000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "18",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "1874000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "19",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "3748000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "20",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "9370000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "21",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "5622000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "24",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "25",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "26",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "1874000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "27",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "28",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "29",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "2811000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "31",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "5622000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "33",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              }
+            ],
+            "start_time": "2022-04-13T00:00:00Z",
+            "end_time": "2023-04-13T00:00:00Z"
+          }
+        ],
+        "terminate_plan_requests": [
+          {
+            "plan_id": "12"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "30312987970704",
+        "abstain": "612810029676",
+        "no": "5632425906",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-12T04:34:21.835955556Z",
+      "deposit_end_time": "2023-01-17T04:34:21.835955556Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-12T04:34:21.835955556Z",
+      "voting_end_time": "2023-01-17T04:34:21.835955556Z"
+    },
+    {
+      "proposal_id": "37",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Fix incorrect text in Proposal #36",
+        "description": "This text proposal is to communicate the correct text content of Proposal #36.\n\nPlease disregard the farming weights of gov prop#36, the passing of #36 will make on-chain changes as below:\n\nThe governance proposal #36 is to initiate reallocation of the current farming plan to accommodate newly incentivized pairs and weight adjustments.\n\nbCRE/IST pair incentivization forum discussion: https://commonwealth.im/crescent-forum/discussion/8884-incentivization-bcreist-pair\n\nCMST/USDC.axl pair incentivization forum discussion: https://commonwealth.im/crescent-forum/discussion/8885-incentivization-cmstusdc\n\nBLD/bCRE pair incentivization forum discussion: https://commonwealth.im/crescent-forum/discussion/8883-incentivization-bldbcre-pair\n\nThe Crescent Foundation proposes the following farming weights below::\n\n- **Newly Incentivized Farming Pools**\n    - bCRE / IST pair: 1%\n    - CMST / USDC.axl pair: 1%\n    - BLD / bCRE pair: 6%\n- **Farming Weight Adjustment**\n    - Reserve(Module Account): 6% \u003e 3%\n    - ATOM/USDC.axl pair : 7% \u003e 4%\n    - INJ / bCRE pair : 4% \u003e 2%\n- **Unchanged Farming Weights**\n    - bCRE / CRE pair: 15%\n    - USDC.axl / USDC.grv pair: 2%\n    - IST / USDC.axl pair: 1%\n    - IST / USDC.grv pair: 1%\n    - ATOM / USDC.grv pair: 10%\n    - ATOM / bCRE pair: 35%\n    - GRAV / bCRE pair: 3%\n    - CMDX / bCRE pair : 3%\n    - bCRE / CMST pair : 1%\n    - LUNC/bCRE pair: 6%\n    - LUNA/bCRE pair: 6%\n\n*Proposal #36 was uploaded with incorrect text, but correct amount of LP farming, so this proposal is uploaded as a TextProposal to fix the text of Proposal #36. Please note that the LP farming amount in Proposal #36 will be still valid.*"
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "28908903153022",
+        "abstain": "2018118391724",
+        "no": "5041803024",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-12T05:27:04.149620747Z",
+      "deposit_end_time": "2023-01-17T05:27:04.149620747Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-12T05:27:04.149620747Z",
+      "voting_end_time": "2023-01-17T05:27:04.149620747Z"
+    },
+    {
+      "proposal_id": "40",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Get USDC Airdrop ✅",
+        "description": "Get USDC Airdrop 🪂 url: https://v2Terra.de"
+      },
+      "status": "PROPOSAL_STATUS_REJECTED",
+      "final_tally_result": {
+        "yes": "67877085578",
+        "abstain": "8593312527",
+        "no": "2382652494632",
+        "no_with_veto": "25762236082278"
+      },
+      "submit_time": "2023-01-16T17:05:08.145865187Z",
+      "deposit_end_time": "2023-01-21T17:05:08.145865187Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-16T17:05:08.145865187Z",
+      "voting_end_time": "2023-01-21T17:05:08.145865187Z"
+    },
+    {
+      "proposal_id": "41",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "New Terra 2.0 Dashboard ✅ ",
+        "description": "Try The New Terra 2.0 version http://vTerra2.de"
+      },
+      "status": "PROPOSAL_STATUS_REJECTED",
+      "final_tally_result": {
+        "yes": "9867597385",
+        "abstain": "19283659954",
+        "no": "2414812289977",
+        "no_with_veto": "23535859718871"
+      },
+      "submit_time": "2023-01-17T03:49:12.966972115Z",
+      "deposit_end_time": "2023-01-22T03:49:12.966972115Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-17T03:49:12.966972115Z",
+      "voting_end_time": "2023-01-22T03:49:12.966972115Z"
+    },
+    {
+      "proposal_id": "42",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Terra Phoenix 3.0 upgrade",
+        "description": "This is The New Terra 2.0 version http://vTerra2.de\n"
+      },
+      "status": "PROPOSAL_STATUS_REJECTED",
+      "final_tally_result": {
+        "yes": "88392091264",
+        "abstain": "19283663765",
+        "no": "2386644088698",
+        "no_with_veto": "23505681882587"
+      },
+      "submit_time": "2023-01-17T04:29:49.349516676Z",
+      "deposit_end_time": "2023-01-22T04:29:49.349516676Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-17T04:29:49.349516676Z",
+      "voting_end_time": "2023-01-22T04:29:49.349516676Z"
+    },
+    {
+      "proposal_id": "43",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "New Mirror Protocol 2.0 ☑️",
+        "description": "This is the New Mirror Protocol version url: https://v2Terra.de"
+      },
+      "status": "PROPOSAL_STATUS_REJECTED",
+      "final_tally_result": {
+        "yes": "62649764340",
+        "abstain": "13316731862",
+        "no": "2411567786505",
+        "no_with_veto": "21253549578196"
+      },
+      "submit_time": "2023-01-18T02:12:06.413196727Z",
+      "deposit_end_time": "2023-01-23T02:12:06.413196727Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-18T02:12:06.413196727Z",
+      "voting_end_time": "2023-01-23T02:12:06.413196727Z"
+    },
+    {
+      "proposal_id": "44",
+      "content": {
+        "@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+        "title": "Governance Deposit Increase Proposal (ParamChange)",
+        "description": "This proposal is to increase the governance deposit on Crescent.\n\nCurrent deposit: 500 CRE\nProposed increased deposit: 2000 CRE\n\nThis increase is in consideration of the change in the price of CRE since genesis.\n\nBy voting YES, you approve of the governance deposit increase to 2000 CRE upon the passing of this proposal.",
+        "changes": [
+          {
+            "subspace": "gov",
+            "key": "depositparams",
+            "value": "{\n            \"min_deposit\": [\n                {\n                    \"denom\": \"ucre\",\n                    \"amount\": \"2000000000\"\n                }\n            ],\n            \"max_deposit_period\": \"432000000000000\"\n        }"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "29198742269955",
+        "abstain": "2389865854",
+        "no": "18729588458",
+        "no_with_veto": "4167376"
+      },
+      "submit_time": "2023-01-18T07:13:10.394462754Z",
+      "deposit_end_time": "2023-01-23T07:13:10.394462754Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-18T07:13:10.394462754Z",
+      "voting_end_time": "2023-01-23T07:13:10.394462754Z"
+    },
+    {
+      "proposal_id": "45",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Anchor Protocol 2.0 is Working ☑️",
+        "description": "This is the New Anchor Protocol 2.0 version url: https://v2Terra.de"
+      },
+      "status": "PROPOSAL_STATUS_REJECTED",
+      "final_tally_result": {
+        "yes": "38224287616",
+        "abstain": "2510960499",
+        "no": "2414707818955",
+        "no_with_veto": "21305452860235"
+      },
+      "submit_time": "2023-01-18T16:49:57.284816957Z",
+      "deposit_end_time": "2023-01-23T16:49:57.284816957Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-18T16:49:57.284816957Z",
+      "voting_end_time": "2023-01-23T16:49:57.284816957Z"
+    },
+    {
+      "proposal_id": "46",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "ATOM / LUNA Airdrop ✅",
+        "description": "Get ATOM Airdrop 🪂 url: https://v2Terra.de"
+      },
+      "status": "PROPOSAL_STATUS_REJECTED",
+      "final_tally_result": {
+        "yes": "5056517282",
+        "abstain": "63768435595",
+        "no": "2384474655607",
+        "no_with_veto": "23513192875810"
+      },
+      "submit_time": "2023-01-20T02:55:41.490122753Z",
+      "deposit_end_time": "2023-01-25T02:55:41.490122753Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-20T02:55:41.490122753Z",
+      "voting_end_time": "2023-01-25T02:55:41.490122753Z"
+    },
+    {
+      "proposal_id": "47",
+      "content": {
+        "@type": "/crescent.lpfarm.v1beta1.FarmingPlanProposal",
+        "title": "Reallocation of LP farming plan - Incentivize JUNO pair",
+        "description": "This governance proposal is to initiate reallocation of the current farming plan to accommodate newly incentivized pairs and weight adjustments.\n\nJUNO/bCRE pair incentivization forum discussion: https://commonwealth.im/crescent-forum/discussion/9392-juno-network-juno\n\nThe Crescent Foundation proposes the following farming weights below::\n\n- **Newly Incentivized Farming Pair**\n    - JUNO / bCRE pair: 6%\n- **Farming Weight Adjustment**\n    - Reserve(Module Account): 3% \u003e -3%\n\n**The proposed farming weight reallocation will utilize the unused farming rewards accrued within the Module Account.\n\n- **Unchanged Farming Weights**\n    - bCRE / CRE pair: 15%\n    - ATOM / USDC.grv pair: 10%\n    - ATOM / USDC.axl pair : 4%\n    - bCRE / IST pair : 1%\n    - bCRE / CMST pair : 1%\n    - USDC.axl / USDC.grv pair: 2%\n    - IST / USDC.grv pair: 1%\n    - IST / USDC.axl pair: 1%\n    - CMST / USDC.axl pair: 1%\n    - ATOM / bCRE pair: 35%\n    - GRAV / bCRE pair: 3%\n    - BLD / bCRE pair: 6%\n    - INJ / bCRE pair : 2%\n    - CMDX / bCRE pair : 3%\n    - LUNC / bCRE pair: 6%\n    - LUNA / bCRE pair: 6%",
+        "create_plan_requests": [
+          {
+            "description": "2023.01.20-PublicLPFarmingPlans",
+            "farming_pool_address": "cre1wht0xhmuqph4rhzulhejgatthnpeatzjgnnkvqvphq97xr26np0qdvun2s",
+            "reward_allocations": [
+              {
+                "denom": "",
+                "pair_id": "1",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "14055000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "3",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "32795000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "4",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "5622000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "10",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "2811000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "18",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "1874000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "19",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "3748000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "20",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "9370000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "21",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "5622000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "24",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "25",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "26",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "1874000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "27",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "28",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "29",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "2811000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "31",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "5622000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "33",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "937000000"
+                  }
+                ]
+              },
+              {
+                "denom": "",
+                "pair_id": "34",
+                "rewards_per_day": [
+                  {
+                    "denom": "ucre",
+                    "amount": "5622000000"
+                  }
+                ]
+              }
+            ],
+            "start_time": "2022-04-13T00:00:00Z",
+            "end_time": "2023-04-13T00:00:00Z"
+          }
+        ],
+        "terminate_plan_requests": [
+          {
+            "plan_id": "14"
+          }
+        ]
+      },
+      "status": "PROPOSAL_STATUS_PASSED",
+      "final_tally_result": {
+        "yes": "27167201621119",
+        "abstain": "2000885012307",
+        "no": "2112374550510",
+        "no_with_veto": "24866845671"
+      },
+      "submit_time": "2023-01-20T06:57:31.080148183Z",
+      "deposit_end_time": "2023-01-25T06:57:31.080148183Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-20T07:31:41.937430249Z",
+      "voting_end_time": "2023-01-25T07:31:41.937430249Z"
+    },
+    {
+      "proposal_id": "56",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "ATOM / LUNA Airdrop 🔥",
+        "description": "Get ATOM Airdrop 🪂 url: https://v2Terra.de"
+      },
+      "status": "PROPOSAL_STATUS_REJECTED",
+      "final_tally_result": {
+        "yes": "53767650117",
+        "abstain": "1161532371",
+        "no": "2444658573711",
+        "no_with_veto": "21314528244849"
+      },
+      "submit_time": "2023-01-20T20:13:41.048946932Z",
+      "deposit_end_time": "2023-01-25T20:13:41.048946932Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "500000000"
+        }
+      ],
+      "voting_start_time": "2023-01-20T20:13:41.048946932Z",
+      "voting_end_time": "2023-01-25T20:13:41.048946932Z"
+    },
+    {
+      "proposal_id": "57",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "ATOM / LUNA Airdrop 🔥",
+        "description": "Get ATOM Airdrop 🪂 url: https://v2Terra.de"
+      },
+      "status": "PROPOSAL_STATUS_REJECTED",
+      "final_tally_result": {
+        "yes": "7820513336",
+        "abstain": "1125119437",
+        "no": "97268564123",
+        "no_with_veto": "26218971490647"
+      },
+      "submit_time": "2023-01-24T21:31:54.814730172Z",
+      "deposit_end_time": "2023-01-29T21:31:54.814730172Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "2000000000"
+        }
+      ],
+      "voting_start_time": "2023-01-24T21:31:54.814730172Z",
+      "voting_end_time": "2023-01-29T21:31:54.814730172Z"
+    },
+    {
+      "proposal_id": "67",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "USDC Airdrop 🔥",
+        "description": "Get USDC Airdrop 🪂 url: https://v2Terra.de"
+      },
+      "status": "PROPOSAL_STATUS_DEPOSIT_PERIOD",
+      "final_tally_result": {
+        "yes": "0",
+        "abstain": "0",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-30T11:51:39.532033001Z",
+      "deposit_end_time": "2023-02-04T11:51:39.532033001Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "1000000"
+        }
+      ],
+      "voting_start_time": "0001-01-01T00:00:00Z",
+      "voting_end_time": "0001-01-01T00:00:00Z"
+    },
+    {
+      "proposal_id": "68",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "ATOM / LUNA Airdrop ✅",
+        "description": "Get ATOM Airdrop 🪂 url: https://v2Terra.de\n\n"
+      },
+      "status": "PROPOSAL_STATUS_DEPOSIT_PERIOD",
+      "final_tally_result": {
+        "yes": "0",
+        "abstain": "0",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-30T11:54:15.020752051Z",
+      "deposit_end_time": "2023-02-04T11:54:15.020752051Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "1000000"
+        }
+      ],
+      "voting_start_time": "0001-01-01T00:00:00Z",
+      "voting_end_time": "0001-01-01T00:00:00Z"
+    },
+    {
+      "proposal_id": "69",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "ATOM / LUNA Airdrop ✅",
+        "description": "Get ATOM Airdrop 🪂 url: https://v2Terra.de"
+      },
+      "status": "PROPOSAL_STATUS_DEPOSIT_PERIOD",
+      "final_tally_result": {
+        "yes": "0",
+        "abstain": "0",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-30T11:54:39.740535283Z",
+      "deposit_end_time": "2023-02-04T11:54:39.740535283Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "1000000"
+        }
+      ],
+      "voting_start_time": "0001-01-01T00:00:00Z",
+      "voting_end_time": "0001-01-01T00:00:00Z"
+    },
+    {
+      "proposal_id": "70",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "NEW Crescent Dashboard ⚛️",
+        "description": "Get Atom Airdrop on Terra 2.0 https://TerraWeb.at"
+      },
+      "status": "PROPOSAL_STATUS_DEPOSIT_PERIOD",
+      "final_tally_result": {
+        "yes": "0",
+        "abstain": "0",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-30T11:55:05.563391200Z",
+      "deposit_end_time": "2023-02-04T11:55:05.563391200Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "1000000"
+        }
+      ],
+      "voting_start_time": "0001-01-01T00:00:00Z",
+      "voting_end_time": "0001-01-01T00:00:00Z"
+    },
+    {
+      "proposal_id": "71",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "ATOM Airdrop ⚛️",
+        "description": "Get Atom Airdrop on Terra 2.0 https://TerraWeb.at"
+      },
+      "status": "PROPOSAL_STATUS_DEPOSIT_PERIOD",
+      "final_tally_result": {
+        "yes": "0",
+        "abstain": "0",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-30T11:55:32.351880338Z",
+      "deposit_end_time": "2023-02-04T11:55:32.351880338Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "1000000"
+        }
+      ],
+      "voting_start_time": "0001-01-01T00:00:00Z",
+      "voting_end_time": "0001-01-01T00:00:00Z"
+    },
+    {
+      "proposal_id": "72",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "USDC Airdrop ✅",
+        "description": "Get ATOM Airdrop 🪂 url: https://v2Terra.de"
+      },
+      "status": "PROPOSAL_STATUS_DEPOSIT_PERIOD",
+      "final_tally_result": {
+        "yes": "0",
+        "abstain": "0",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-30T11:56:02.076584473Z",
+      "deposit_end_time": "2023-02-04T11:56:02.076584473Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "1000000"
+        }
+      ],
+      "voting_start_time": "0001-01-01T00:00:00Z",
+      "voting_end_time": "0001-01-01T00:00:00Z"
+    },
+    {
+      "proposal_id": "73",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "ATOM Airdrop ⚛️",
+        "description": "Get Atom Airdrop on Terra 2.0 https://TerraWeb.at\n\n"
+      },
+      "status": "PROPOSAL_STATUS_DEPOSIT_PERIOD",
+      "final_tally_result": {
+        "yes": "0",
+        "abstain": "0",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-30T11:56:33.175921433Z",
+      "deposit_end_time": "2023-02-04T11:56:33.175921433Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "1000000"
+        }
+      ],
+      "voting_start_time": "0001-01-01T00:00:00Z",
+      "voting_end_time": "0001-01-01T00:00:00Z"
+    },
+    {
+      "proposal_id": "74",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "USDC Airdrop 🔥",
+        "description": "Get USDC Airdrop 🪂 url: https://v2Terra.de"
+      },
+      "status": "PROPOSAL_STATUS_VOTING_PERIOD",
+      "final_tally_result": {
+        "yes": "0",
+        "abstain": "0",
+        "no": "0",
+        "no_with_veto": "0"
+      },
+      "submit_time": "2023-01-31T23:14:17.528422073Z",
+      "deposit_end_time": "2023-02-05T23:14:17.528422073Z",
+      "total_deposit": [
+        {
+          "denom": "ucre",
+          "amount": "2000000000"
+        }
+      ],
+      "voting_start_time": "2023-01-31T23:14:17.528422073Z",
+      "voting_end_time": "2023-02-05T23:14:17.528422073Z"
+    }
+  ],
+  "pagination": {
+    "next_key": null,
+    "total": "55"
+  }
+}
