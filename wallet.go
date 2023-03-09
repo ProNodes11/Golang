@@ -1,4 +1,4 @@
-package main
+package wallet
 
 import (
 	"io/ioutil"
