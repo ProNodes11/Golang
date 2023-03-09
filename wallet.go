@@ -1,4 +1,4 @@
-package wallet
+package main
 
 import (
 	"io/ioutil"
@@ -75,6 +75,7 @@ type WalletCheck struct {
 	Details []interface{} `json:"details"`
 }
 
+
 func GetBalance(address string, api string) (ress string) {
 	walletexist := CheckWallet(address, api)
 	switch walletexist {
@@ -85,7 +86,7 @@ func GetBalance(address string, api string) (ress string) {
 		tokendelegated :=GetDelegatedBalance(address, api)
 		tokenunbounding := GetUnboundingBalance(address, api)
 		tokenreward := GetRewardBalance(address, api)
-		ress = fmt.Sprintf("Количество токенов: %s \nКоличество делегированых токенов: %s \nКоличество токенов в анбаунде: %s \nКоличество ревардов %s", tokenamount, tokendelegated, tokenunbounding, tokenreward)
+		ress = fmt.Sprintf("Token amount: %s \nDelegeted tokens: %s \nUnbounding: \n%s \nRewards: %s", tokenamount, tokendelegated, tokenunbounding, tokenreward)
 	}
 	return
 }
@@ -104,16 +105,16 @@ func GetAvailableBalance(address string, api string) (ress string) {
 	 if err := json.Unmarshal([]byte(body), &response); err != nil{
 		 log.Printf("Ошибка")
 	 }
-	 var fullamount float64
+	 // var fullamount float64
 	 if len(response.Balances) == 0 {
 		 ress = "0.0"
 	 } else {
 		 for i := range response.Balances{
 			 if amount, err := strconv.ParseFloat(response.Balances[i].Amount, 64); err == nil {
-	 		 	fullamount += amount
+        ress += fmt.Sprintf("\n%.6f %s ", amount / 1000000.0, response.Balances[i].Denom)
 				}
 		 	}
-		 ress = fmt.Sprintf("%.6f %s", fullamount / 1000000.0, response.Balances[0].Denom)
+
 	 }
 	return ress
 }
@@ -139,7 +140,7 @@ func GetDelegatedBalance(address string, api string) (ress string) {
 				 fullamount += amount
 				 }
 			 }
-			ress = fmt.Sprintf("%.6f %s", fullamount / 1000000.0, response.DelegationResponses[0].Balance.Denom)
+			ress = fmt.Sprintf("\n%.6f %s", fullamount / 1000000.0, response.DelegationResponses[0].Balance.Denom)
 	}
 	return ress
 }
@@ -166,7 +167,7 @@ func GetUnboundingBalance(address string, api string) (ress string) {
 				 fullamount += amount
 				 }
 			 }
-			ress = fmt.Sprintf("%.6f", fullamount / 1000000.0)
+			ress = fmt.Sprintf("\n%.6f", fullamount / 1000000.0)
 	}
 	return ress
 }
@@ -184,15 +185,15 @@ func GetRewardBalance(address string, api string) (ress string) {
 	 if err := json.Unmarshal([]byte(body), &response); err != nil{
 		 log.Printf("Ошибка")
 	 }
-	 var fullamount float64
+	 // var fullamount float64
 	 if len(response.Total) == 0 {
 		 ress = "0.0"
 		 } else {
 		  for i := range response.Total{
 				if amount, err := strconv.ParseFloat(response.Total[i].Amount, 64); err == nil {
-				 fullamount += amount
+				 ress += fmt.Sprintf("\n%.6f %s", amount / 1000000.0, response.Total[i].Denom)
 				 }
-			  ress = fmt.Sprintf("%.6f %s", fullamount / 1000000.0, response.Total[i].Denom)
+
 			 }
 	}
 	return ress
