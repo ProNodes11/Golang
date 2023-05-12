@@ -86,7 +86,7 @@ func GetBalance(address string, api string) (ress string) {
 		tokendelegated :=GetDelegatedBalance(address, api)
 		tokenunbounding := GetUnboundingBalance(address, api)
 		tokenreward := GetRewardBalance(address, api)
-		ress = fmt.Sprintf("Token amount: %s \nDelegeted tokens: %s \nUnbounding: \n%s \nRewards: %s", tokenamount, tokendelegated, tokenunbounding, tokenreward)
+		ress = fmt.Sprintf("🔹Token amount: %s \n\n🔹Delegeted tokens: %s \n\n🔹Unbounding: \n%s \n\n🔹Rewards: %s", tokenamount, tokendelegated, tokenunbounding, tokenreward)
 	}
 	return
 }
